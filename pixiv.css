@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    transition: .6s;
+  }
+header {
+    position: absolute;
+    width: 1920px;
+    height: 38px;
+    left: calc(50% - 1920px/2);
+    top: 0px;
+}
+header .toggle {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    left: 386px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 33px;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 34px;
+    transition: .4s;
+  }
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  .switch input:checked + .slider {
+    background-color: #0096fa;
+  }
+  .switch input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+/* 다크모드 배경색 */
+  .dark-mode {
+    background: #000;
+  }
+
+.search-box {
+    background-color: #EEEEEE;
+    height: 40px;
+    padding: 40px;
+}
