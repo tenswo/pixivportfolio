@@ -312,5 +312,5 @@ section > h1 {
   background: url(/img/back.svg) no-repeat 30% 30% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(img/forword.svg) no-repeat 30% 30% / contain;
+  background: url(/img/forword.svg) no-repeat 30% 30% / contain;
 }
