@@ -218,7 +218,7 @@ nav.sub a.logo {
   height: 84px;
   text-indent: -500px;
   overflow: hidden;
-  background: url(/img/LOGO.png) no-repeat;
+  background: url(/Users/Administrator/Documents/GitHub/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub .menu {
   position: absolute;
@@ -315,10 +315,10 @@ section > h1 {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/Users/Administrator/Documents/GitHub/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/img/forword.svg) no-repeat 50% 50% / contain;
+  background: url(/Users/Administrator/Documents/GitHub/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
 }
 .drawing ul .filter {
   display: inherit;
