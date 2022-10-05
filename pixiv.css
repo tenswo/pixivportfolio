@@ -218,7 +218,7 @@ nav.sub a.logo {
   height: 84px;
   text-indent: -500px;
   overflow: hidden;
-  background: url(/img/LOGO.png) no-repeat;
+  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub .menu {
   position: absolute;
