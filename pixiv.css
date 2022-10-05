@@ -315,7 +315,7 @@ section > h1 {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/pixivportfolio//img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
   background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
