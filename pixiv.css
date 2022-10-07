@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 * {
@@ -210,7 +210,7 @@ nav.sub {
   width: 1146px;
   height: 184px;
   left: 386px;
-  top: 50px;
+  top: 80px;
   display: flex;
 }
 nav.sub a.logo {
@@ -274,7 +274,7 @@ section > h1 {
 }
 .slidebanner{
   width: 1688px;
-  height: 983px;
+  height: 987px;
   display:inline-block;
 }
 .slidebanner .slide {
@@ -320,42 +320,134 @@ section > h1 {
 .slidebanner .slick-next::before{
   background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
 }
-.drawing ul .filter {
-  display: inherit;
-}
-.drawing ul.filter > li {
-  font-size: 15px;
-  line-height: 1;
-  color: #000;
-  margin: 0 40px 0 0;
+div.drawing {
   position: relative;
-  white-space: nowrap;
-}
-.Users ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  justify-content: center;
-  width: 320px;
-  height: 200px;
+  display: block;
+  align-items: flex-start;
   top: 1276px;
 }
-.Users ul li {
-  flex: 1;
-  background: #009CFF;
-  border-left: none;
-  height: 31px;
+.inner {
+  position: absolute;
+  margin: 0px auto;
+  padding-right: 388px;
+  padding-left: 386px;
+  width: 1146px;
 }
-.Users ul li a {
+.sec01 {
+  margin: 0px;
+  padding: 0px;
+}
+div .first h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  display: flex;
+  letter-spacing: -0.065em;
+}
+div h2 {
   display: block;
-  height: 30px;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  border-bottom: 1px solid #009CFF;
-  text-decoration: none;
+  padding-bottom: 55px;
+}
+.users {
+  display: block;
+}
+.abc {
+  width: 1146px;
+}
+ul .list {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  margin: -12px;
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+ul .list li {
+  width: 173.5px;
+  order: 1;
+  list-style: none;
+}
+.example {
+  width: 173.5px;
+}
+
+.illust1 {
+  width: 173px;
+  height: 174px;
+  border-radius: 10px;
+}
+.name1 {
+  position: relative;
+  width: 173px;
+  height: 14px;
+  top: 2px;
+}
+.frofile1 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/pixivportfolio/img/profile1.svg);
+}
+.artist1 {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 8px;
+  left: 14px;
+}
+div.reaction {
+  position: absolute;
+  display: flex;
+  width: 77px;
+  height: 14px;
+  left: 95px;
+  top: 0px;
+  gap: 5px;
+}
+.heart {
+  width: 36px;
+  height: 14px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  letter-spacing: -0.065em;
+}
+.heart a {
+  transform: translateY(2px);
+}
+.heart button {
+  width: 10px;
+  height: 10px;
+  border:none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background: url(/pixivportfolio/img/whitehearts.svg);
+}
+.heart button:focus {
+  background: url(/pixivportfolio/img/redheart.svg);
+}
+.views {
+  width: 36px;
+  height: 14px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.065em;
 }
