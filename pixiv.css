@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   word-break: keep-all;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 body {
   width: 1920px;
@@ -218,7 +218,7 @@ nav.sub a.logo {
   height: 84px;
   text-indent: -500px;
   overflow: hidden;
-  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
+  background: url(/img/LOGO.png) no-repeat;
 }
 nav.sub .menu {
   position: absolute;
@@ -315,12 +315,12 @@ section > h1 {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
+  background: url(/img/forword.svg) no-repeat 50% 50% / contain;
 }
-div.drawing {
+.drawing {
   position: relative;
   display: block;
   align-items: flex-start;
@@ -334,6 +334,7 @@ div.drawing {
   width: 1146px;
 }
 .sec01 {
+  position: absolute;
   margin: 0px;
   padding: 0px;
 }
@@ -348,11 +349,14 @@ div h2 {
   display: block;
   padding-bottom: 55px;
 }
-.users {
+.users div {
   display: block;
 }
 .abc {
   width: 1146px;
+}
+.list {
+  float: left;
 }
 ul .list {
   display: flex;
@@ -360,23 +364,31 @@ ul .list {
   flex-wrap: wrap;
   margin: -12px;
   list-style: none;
+  overflow: auto;
 }
-li {
-  list-style: none;
-}
-ul .list li {
-  width: 173.5px;
-  order: 1;
+ul li {
+  position: absolute;
   list-style: none;
 }
 .example {
-  width: 173.5px;
+  width: 1146px;
+  display: inline-block;
 }
-
-.illust1 {
-  width: 173px;
-  height: 174px;
+.example .illust .image {
+  height: 175px;
+  width: 175px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.example .illust .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
   border-radius: 10px;
+}
+.example .illust .image:hover img {
+  transform: scale(1.1);
 }
 .name1 {
   position: relative;
@@ -384,12 +396,43 @@ ul .list li {
   height: 14px;
   top: 2px;
 }
+.name1 .popup_image {
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.name1 .popup_image span {
+  position: absolute;
+  top:0; right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.name1 .popup_image img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  width: 750px;
+  object-fit: cover;
+}
+@media (max-width:7){
+  .name1 .popup_image img{
+    width:95%
+  }
+}
 .frofile1 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/pixivportfolio/img/profile1.svg);
+  background: url(/img/profile1.svg);
 }
 .artist1 {
   position: absolute;
@@ -405,7 +448,6 @@ div.reaction {
   width: 77px;
   height: 14px;
   left: 95px;
-  top: 0px;
   gap: 5px;
 }
 .heart {
@@ -432,10 +474,10 @@ div.reaction {
   outline: none;
   box-shadow: none;
   cursor: pointer;
-  background: url(/pixivportfolio/img/whitehearts.svg);
+  background: url(/img/whitehearts.svg);
 }
 .heart button:focus {
-  background: url(/pixivportfolio/img/redheart.svg);
+  background: url(/img/redheart.svg);
 }
 .views {
   width: 36px;
