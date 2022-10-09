@@ -13,6 +13,7 @@ body {
   width: 1920px;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden
 }
 body::-webkit-scrollbar {
   display: none;
@@ -323,8 +324,8 @@ section > h1 {
 .drawing {
   position: relative;
   display: block;
-  align-items: flex-start;
   top: 1276px;
+  box-sizing: border-box;
 }
 .inner {
   position: absolute;
@@ -351,24 +352,45 @@ div h2 {
 }
 .users div {
   display: block;
+  box-sizing: border-box;
 }
 .abc {
-  width: 100%;
+  position: relative;
+  width: 1146px;
 }
 ul .list {
-  display: flex;
+  position: absolute;
+  width: 1146px;
   padding: 0px;
   flex-wrap: wrap;
-  margin: -12px;
   list-style: none;
   overflow: auto;
 }
 ul li {
   position: absolute;
   list-style: none;
+  width: 173.5px;
+}
+ul li:nth-child(2) {
+  left: 193.5px;
+}
+ul li:nth-child(3) {
+  left: 387px;
+}
+ul li:nth-child(4) {
+  left: 580.5px;
+}
+ul li:nth-child(5) {
+  left: 774px;
+}
+ul li:nth-child(6) {
+  left: 967.5px;
+}
+div img{
+  cursor: pointer;
 }
 .example {
-  width: 1146px;
+  width: 173.5px;
   display: inline-block;
 }
 .example .illust .image {
@@ -387,13 +409,13 @@ ul li {
 .example .illust .image:hover img {
   transform: scale(1.1);
 }
-.name1 {
+.name {
   position: relative;
   width: 173px;
   height: 14px;
   top: 2px;
 }
-.name1 .popup_image {
+.name .popup_image {
   position: fixed;
   top: 0; left: 0;
   background: rgba(0,0,0,.9);
@@ -402,7 +424,7 @@ ul li {
   z-index: 100;
   display: none;
 }
-.name1 .popup_image span {
+.name .popup_image span {
   position: absolute;
   top:0; right: 10px;
   font-size: 40px;
@@ -411,12 +433,13 @@ ul li {
   cursor: pointer;
   z-index: 100;
 }
-.name1 .popup_image img {
+.name .popup_image img {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border: 5px solid #fff;
-  width: 750px;
+  width: 500px;
   object-fit: cover;
 }
 @media (max-width:7){
@@ -424,19 +447,54 @@ ul li {
     width:95%
   }
 }
-.frofile1 {
+.profile1 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
   background: url(/img/profile1.svg);
 }
-.artist1 {
+.profile2 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/img/profile2.svg);
+}
+.profile3 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/img/profile3.svg);
+}
+.profile4 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/img/profile4.svg);
+}
+.profile5 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/img/profile5.svg);
+}
+.profile6 {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: url(/img/profile6.svg);
+}
+.artist {
   position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 8px;
+  line-height: 10px;
   left: 14px;
 }
 div.reaction {
@@ -489,4 +547,8 @@ div.reaction {
   align-items: center;
   text-align: center;
   letter-spacing: -0.065em;
+}
+.list1 {
+  top: 210px;
+  position: absolute;
 }
