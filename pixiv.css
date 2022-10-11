@@ -7,13 +7,13 @@
   padding: 0;
   margin: 0;
   word-break: keep-all;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 body {
   width: 1920px;
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden
+  /* overflow-x: hidden */
 }
 body::-webkit-scrollbar {
   display: none;
@@ -450,44 +450,77 @@ div img{
 .profile1 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile1.svg);
 }
 .profile2 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile2.svg);
 }
 .profile3 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile3.svg);
 }
 .profile4 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile4.svg);
 }
 .profile5 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile5.svg);
 }
 .profile6 {
   width: 12px;
   height: 12px;
-  margin: 0;
-  padding: 0;
   background: url(/pixivportfolio/img/profile6.svg);
+}
+.profile7 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile7.svg);
+}
+.profile8 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile8.svg);
+}
+.profile9 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile9.svg);
+}
+.profile10 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile10.svg);
+}
+.profile11 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile11.svg);
+}
+.profile12 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile12.svg);
+}
+.profile16 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile16.svg);
+}
+.profile19 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile19.svg);
+}
+.profile24 {
+  width: 12px;
+  height: 12px;
+  background: url(/pixivportfolio/img/profile24.svg);
 }
 .artist {
   position: absolute;
@@ -549,6 +582,43 @@ div.reaction {
   letter-spacing: -0.065em;
 }
 .list1 {
-  top: 210px;
   position: absolute;
+  top: 210px;
+}
+div.inner .sec02 {
+  position: absolute;
+  top: 520px;
+}
+div.inner .sec03 {
+  position: absolute;
+  width: 1147px;
+  top: 1050px;
+  margin: 0;
+  padding: 0;
+}
+.popular h2 {
+  width: 116px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.065em;
+}
+div .crown {
+  width: 255px;
+  height: 48px;
+}
+div .crown img {
+  width: 48px;
+  height: 48px;
+}
+div .crown div {
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: -0.065em;
+  flex: none;
+}
+.popular .three {
+  top: 60px;
 }
