@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   word-break: keep-all;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
   width: 1920px;
@@ -219,7 +219,7 @@ nav.sub a.logo {
   height: 84px;
   text-indent: -500px;
   overflow: hidden;
-  background: url(/img/LOGO.png) no-repeat;
+  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub .menu {
   position: absolute;
@@ -316,10 +316,10 @@ section > h1 {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/img/forword.svg) no-repeat 50% 50% / contain;
+  background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
 }
 .drawing {
   position: relative;
@@ -442,7 +442,7 @@ div img{
   width: 500px;
   object-fit: cover;
 }
-@media (max-width:7){
+@media (max-width:0){
   .name1 .popup_image img{
     width:95%
   }
@@ -452,42 +452,42 @@ div img{
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile1.svg);
+  background: url(/pixivportfolio/img/profile1.svg);
 }
 .profile2 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile2.svg);
+  background: url(/pixivportfolio/img/profile2.svg);
 }
 .profile3 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile3.svg);
+  background: url(/pixivportfolio/img/profile3.svg);
 }
 .profile4 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile4.svg);
+  background: url(/pixivportfolio/img/profile4.svg);
 }
 .profile5 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile5.svg);
+  background: url(/pixivportfolio/img/profile5.svg);
 }
 .profile6 {
   width: 12px;
   height: 12px;
   margin: 0;
   padding: 0;
-  background: url(/img/profile6.svg);
+  background: url(/pixivportfolio/img/profile6.svg);
 }
 .artist {
   position: absolute;
@@ -529,10 +529,10 @@ div.reaction {
   outline: none;
   box-shadow: none;
   cursor: pointer;
-  background: url(/img/whitehearts.svg);
+  background: url(/pixivportfolio/img/whitehearts.svg);
 }
 .heart button:focus {
-  background: url(/img/redheart.svg);
+  background: url(/pixivportfolio/img/redheart.svg);
 }
 .views {
   width: 36px;
