@@ -10,35 +10,34 @@
   /* outline: 1px solid red; */
 }
 body {
-  width: 1920px;
-  padding: 0px;
-  margin: 0px;
-  /* overflow-x: hidden */
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 body::-webkit-scrollbar {
   display: none;
 }
 header {
-  width: 1920px;
+  width: 100%;
   height: 38px;
+  top: 0;
   padding: 0px;
   margin: 0px;
-  position: absolute;
+  z-index: 1;
+  background: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .function {
   position: absolute;
-  width: 1146.71px;
+  width: 100%;
   height: 38px;
   left: 386px;
-  top: 0px;
-  margin: 0%;
-  padding: 0%;
-}
-.function .toggle,
-.function .search-box {
-  display: inline-block;
-  align-items: center;
+  top: 0;
   margin: 0;
+  padding: 0;
 }
 .switch {
     position: relative;
@@ -84,12 +83,10 @@ header {
 
 .search-box{
   position: absolute;
-  width: 350px;
-  height: 38px;
+  height: 35px;
   left: 135px;
   top: 0px;
   background: #eeeeee;
-  border: 10px;
   border-radius: 8px;
   padding: 10px;
   outline: none;
@@ -107,7 +104,7 @@ header {
 .search-txt {
   border: 10px;
   width: 300px;
-  height: 20px;
+  height: 15px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -120,7 +117,7 @@ header {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 15px;
   align-items: center;
 }
 .login-SIGHUP {
@@ -243,15 +240,13 @@ nav.sub .menu {
 }
 .banner {
   position: absolute;
-  width: 1650px;
+  width: 100%;
   height: 982.52px;
-  left: 147px;
   top: 223px;
-  padding: 0;
   align-items: center;
   justify-content: center;
 }
-section > h1 {
+.banner h1 {
   overflow: hidden;
   text-indent: -500px;
 }
@@ -274,8 +269,11 @@ section > h1 {
   transform: translateY(-50%);
 }
 .slidebanner{
+  position: absolute;
   width: 1688px;
-  height: 987px;
+  top: 0;
+  padding: 0;
+  margin: 0;
   display:inline-block;
 }
 .slidebanner .slide {
@@ -324,15 +322,14 @@ section > h1 {
 .drawing {
   position: relative;
   display: block;
+  height: auto;
   top: 1276px;
-  box-sizing: border-box;
 }
 .inner {
   position: absolute;
   margin: 0px auto;
   padding-right: 388px;
   padding-left: 386px;
-  width: 1146px;
 }
 .sec01 {
   position: absolute;
@@ -525,9 +522,9 @@ div img{
 .artist {
   position: absolute;
   font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
   left: 14px;
 }
 div.reaction {
@@ -558,6 +555,7 @@ div.reaction {
 .heart button {
   width: 10px;
   height: 10px;
+  transform: translateY(1px);
   border:none;
   outline: none;
   box-shadow: none;
@@ -569,13 +567,13 @@ div.reaction {
 }
 .views {
   width: 36px;
-  height: 14px;
+  height: 10px;
   padding: 0;
-
+  transform: translateY(2px);
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 14px;
+  line-height: 10px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -585,11 +583,11 @@ div.reaction {
   position: absolute;
   top: 210px;
 }
-div.inner .sec02 {
+.sec02 {
   position: absolute;
   top: 520px;
 }
-div.inner .sec03 {
+.sec03 {
   position: absolute;
   width: 1147px;
   top: 1050px;
@@ -605,20 +603,37 @@ div.inner .sec03 {
   line-height: 36px;
   letter-spacing: -0.065em;
 }
-div .crown {
+div.crown {
   width: 255px;
   height: 48px;
-}
-div .crown img {
-  width: 48px;
-  height: 48px;
-}
-div .crown div {
   font-style: normal;
   font-size: 30px;
   letter-spacing: -0.065em;
   flex: none;
+  columns: 24px;
+}
+div.crown img {
+  width: 48px;
+  height: 48px;
 }
 .popular .three {
-  top: 60px;
+  top: 20px;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+}
+.popular .three button {
+  visibility: hidden;
+}
+.sec04 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 1500px;
+}
+.sec04 h2 {
+  visibility: hidden;
 }
