@@ -27,3 +27,12 @@ document.querySelectorAll('.illust1 img').forEach(image =>{
 document.querySelector('.popup_image span').onclick = () =>{
     document.querySelector('.popup_image').style.display = 'none';
 }
+$(function() {
+    $('.three').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed:1500,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+});
