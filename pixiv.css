@@ -637,3 +637,13 @@ div.crown img {
 .sec04 h2 {
   visibility: hidden;
 }
+.youtube-container {
+  position:relative;
+  width:100%;
+  height:0;
+}
+iframe {
+  position: absolute;
+  width: 1146px;
+  height: 645px;
+}
