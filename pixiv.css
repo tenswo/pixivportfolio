@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
@@ -14,61 +14,47 @@ body {
   margin: 0;
   padding: 0;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
-header {
-  width: 100%;
-  height: 38px;
-  top: 0;
-  padding: 0px;
-  margin: 0px;
-  z-index: 1;
-  background: #fff;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .function {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 38px;
-  left: 386px;
-  top: 0;
-  margin: 0;
-  padding: 0;
+  z-index: 100;
+  gap: 66px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+div .toggle input {
+  visibility: hidden;
 }
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 57px;
-    height: 33px;
-}
-.switch input {
-    display: none;
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 33px;
 }
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    border-radius: 34px;
-    transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 34px;
+  transition: .4s;
 }
 .slider:before {
-    content: "";
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    left: 4px;
-    bottom: 4px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .4s;
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background: #fff;
+  border-radius: 50%;
+  transition: .4s;
 }
 .switch input:checked + .slider {
   background-color: #0096fa;
@@ -80,11 +66,8 @@ header {
 .dark-mode {
   background: #000;
 }
-
 .search-box{
-  position: absolute;
   height: 35px;
-  left: 135px;
   top: 0px;
   background: #eeeeee;
   border-radius: 8px;
@@ -100,10 +83,9 @@ header {
   justify-content: center;
   align-content: center;
  }
-
 .search-txt {
   border: 10px;
-  width: 300px;
+  width: 350px;
   height: 15px;
   flex: none;
   order: 1;
@@ -120,21 +102,18 @@ header {
   line-height: 15px;
   align-items: center;
 }
-.login-SIGHUP {
+.function .login-SIGHUP {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
-  position: absolute;
   width: 140px;
   height: 27px;
-  left: 563px;
   top: 5.5px;
   color: #000;
   text-decoration: none;
 }
-
 .login-SIGHUP .login,
 .login-SIGHUP .signup{
   font-style: normal;
@@ -154,7 +133,6 @@ header {
   color: #0096fa;
 }
 .link {
-  position: absolute;
   width: 365.71px;
   padding: 5px;
   height: 20px;
@@ -180,7 +158,6 @@ header {
 .language a {
   width: 20px;
   height: 20px;
-  position: absolute;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
@@ -204,31 +181,30 @@ header {
   top: 4px;
 }
 nav.sub {
-  position: absolute;
-  width: 1146px;
+  width: 100%;
   height: 184px;
-  left: 386px;
-  top: 80px;
+  margin: 0 auto;
+  padding: 50px 300px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 372px;
 }
 nav.sub a.logo {
   width: 217px;
   height: 84px;
-  text-indent: -500px;
-  overflow: hidden;
+  /* display: block; */
   background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
-nav.sub .menu {
-  position: absolute;
+nav.sub div.menu {
   width: 557px;
-  height: 34px;
-  left: 588px;
-  top: 30px;
   padding: 0px;
+  gap: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.sub .menu a {
+nav.sub div.menu a {
   font-weight: 600;
   font-size: 25px;
   line-height: 34px;
@@ -238,25 +214,23 @@ nav.sub .menu {
   text-decoration: none;
   display: inline-block;
 }
+div .next {
+  display: block;
+}
 .banner {
-  position: absolute;
-  width: 100%;
-  height: 982.52px;
-  top: 223px;
-  align-items: center;
-  justify-content: center;
+ position: relative;
+ width: 100%;
+ height: 987px;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .banner h1 {
   overflow: hidden;
   text-indent: -500px;
-}
-.banner {
-  justify-content: center;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-}
-.banner h1 {
+
   width: 0px;
   height: 0px;
   padding: 0px;
@@ -294,7 +268,7 @@ nav.sub .menu {
   height: 50px;
   margin: 0;
   padding: 0;
-  z-index: 100;
+  z-index: 50;
 }
 .slick-prev{
   left: -80px;
@@ -319,20 +293,28 @@ nav.sub .menu {
 .slidebanner .slick-next::before{
   background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
 }
-.drawing {
+div.drawing {
   position: relative;
+  width: 100%;
+  height: 100%;
+  top: 42px;
   display: block;
-  height: auto;
-  top: 1276px;
 }
 .inner {
-  position: absolute;
-  margin: 0px auto;
-  padding-right: 388px;
-  padding-left: 386px;
+  width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+div .inner section {
+  width: 1146px;
+  height: 530px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  align-items: center;
 }
 .sec01 {
-  position: absolute;
+  position: relative;
   margin: 0px;
   padding: 0px;
 }
@@ -352,21 +334,15 @@ div h2 {
   box-sizing: border-box;
 }
 .abc {
-  position: relative;
-  width: 1146px;
+  position: absolute;
 }
 ul .list {
-  position: absolute;
-  width: 1146px;
   padding: 0px;
   flex-wrap: wrap;
-  list-style: none;
-  overflow: auto;
 }
 ul li {
   position: absolute;
   list-style: none;
-  width: 173.5px;
 }
 ul li:nth-child(2) {
   left: 193.5px;
@@ -439,85 +415,80 @@ div img{
   width: 500px;
   object-fit: cover;
 }
-@media (max-width:0){
-  .name1 .popup_image img{
-    width:95%
-  }
-}
 .profile1 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile1.svg);
+  background: url(/pixivportfolio/img/profile1.svg) no-repeat;
 }
 .profile2 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile2.svg);
+  background: url(/pixivportfolio/img/profile2.svg) no-repeat;
 }
 .profile3 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile3.svg);
+  background: url(/pixivportfolio/img/profile3.svg) no-repeat;
 }
 .profile4 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile4.svg);
+  background: url(/pixivportfolio/img/profile4.svg) no-repeat;
 }
 .profile5 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile5.svg);
+  background: url(/pixivportfolio/img/profile5.svg) no-repeat;
 }
 .profile6 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile6.svg);
+  background: url(/pixivportfolio/img/profile6.svg) no-repeat;
 }
 .profile7 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile7.svg);
+  background: url(/pixivportfolio/img/profile7.svg) no-repeat;
 }
 .profile8 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile8.svg);
+  background: url(/pixivportfolio/img/profile8.svg) no-repeat;
 }
 .profile9 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile9.svg);
+  background: url(/pixivportfolio/img/profile9.svg) no-repeat;
 }
 .profile10 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile10.svg);
+  background: url(/pixivportfolio/img/profile10.svg) no-repeat;
 }
 .profile11 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile11.svg);
+  background: url(/pixivportfolio/img/profile11.svg) no-repeat;
 }
 .profile12 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile12.svg);
+  background: url(/pixivportfolio/img/profile12.svg) no-repeat;
 }
 .profile16 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile16.svg);
+  background: url(/pixivportfolio/img/profile16.svg) no-repeat;
 }
 .profile19 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile19.svg);
+  background: url(/pixivportfolio/img/profile19.svg) no-repeat;
 }
 .profile24 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile24.svg);
+  background: url(/pixivportfolio/img/profile24.svg) no-repeat;
 }
 .artist {
   position: absolute;
@@ -584,24 +555,17 @@ div.reaction {
   top: 210px;
 }
 .sec02 {
-  position: absolute;
-  top: 520px;
+  position: relative;
 }
 .sec03 {
-  position: absolute;
-  width: 1147px;
-  top: 1050px;
+  position: relative;
+  display: block;
   margin: 0;
   padding: 0;
 }
-.popular h2 {
-  width: 116px;
-  height: 36px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: -0.065em;
+.page {
+  width: 1146px;
+  height: 514px;
 }
 div.crown {
   width: 255px;
@@ -625,25 +589,172 @@ div.crown img {
   line-height: 48px;
   text-align: center;
 }
+.popular h2 {
+  width: 116px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.065em;
+}
 .popular .three button {
   visibility: hidden;
 }
 .sec04 {
-  position: absolute;
+  position: relative;
+  top: 20px;
   margin: 0;
   padding: 0;
-  top: 1500px;
 }
 .sec04 h2 {
-  visibility: hidden;
-}
-.youtube-container {
-  position:relative;
-  width:100%;
-  height:0;
+  overflow: hidden;
+  text-indent: -500px;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 iframe {
-  position: absolute;
   width: 1146px;
-  height: 645px;
+  height: 530px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  top: 40px;
+  height: 322px;
+  display: block;
+  background:linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0.7) 90%,
+    rgba(255, 255, 255, 1) 98%,
+    rgba(255, 255, 255, 1) 99%,
+    rgba(255, 255, 255, 1) 100%
+  ),
+  url(/pixivportfolio/img/footer.svg) no-repeat;
+}
+.other {
+  padding: 0px;
+  gap: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools {
+  padding: 0px;
+  gap: 52px;
+  width: 750px;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.paint {
+  width: 750px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  gap: 70px;  
+}
+.helper {
+  width: 750px;
+  height: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 25px;
+}
+.helper a {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.065em;
+  color: #000000;
+}
+.Executives {
+  width: 598px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 100px;
+}
+.imformation1,
+.imformation2  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+}
+.ceo-founder {
+  width: 100%;
+  padding: 0px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ceo-founder span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -0.05em;
+}
+.inf {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.program {
+  width: 368px;
+  height: 320px;
+  padding: 17px 51px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+.program .paint {
+  padding: 0px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div .paint div {
+  width: 62px;
+  height: 286px;
+  padding: 0px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+div .paint a {
+  text-decoration: none;
+}
+div .paint span {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.065em;
 }

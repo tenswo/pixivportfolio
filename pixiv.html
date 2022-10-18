@@ -11,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/pixivportfolio/pixiv.css">
 </head>
 <body>
-    <header>
-        <div class="function">
+    <div class="function">
             <div class="toggle">
                 <label class="switch">
                 <input type="checkbox" onclick="changeMode()">
@@ -20,10 +19,10 @@
                 </label>
             </div>
             <div class="search-box">
-                    <input class="search-txt" type="text" placeholder="Search works">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <input class="search-txt" type="text" placeholder="Search works">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
             <div class="login-SIGHUP">
                 <div class="login">
@@ -48,10 +47,9 @@
                 </div>
                 </div>
             </div>
-        </div>
-    </header>
+    </div>
     <nav class="sub">
-        <a href="/pixivportfolio/pixiv.html" class="logo">픽시브 로고</a>
+        <a href="/pixivportfolio/pixiv.html" class="logo"></a>
         <div class="menu">
             <a href="#">ABOUT</a>
             <a href="#">WORK</a>
@@ -59,23 +57,25 @@
             <a href="#">SENSEI</a>
         </div>
     </nav>
-    <section class="banner">
-        <h1>#</h1>
-            <div class="slidebanner">
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner1.png" alt=""></div>
+    <div class="next">
+        <section class="banner">
+            <h1>#</h1>
+                <div class="slidebanner">
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner1.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner2.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner3.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner4.png" alt=""></div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner2.png" alt=""></div>
-                </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner3.png" alt=""></div>
-                </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner4.png" alt=""></div>
-                </div>
-            </div>
-    </section>
+        </section>
+    </div>
     <div class="drawing">
         <div class="inner">
             <section class="sec01">
@@ -634,6 +634,57 @@
             </section>
         </div>
     </div>
+    <footer>
+        <div class="other">
+            <div class="tools">
+                <div class="paint">
+                    <a href="https://www.clipstudio.net/kr/"><img src="/pixivportfolio/img/Clipstudio.svg" alt="Clipstudio"></a>
+                    <a href="https://medibangpaint.com/ko/"><img src="/pixivportfolio/img/Medibang.svg" alt="Medibang"></a>
+                    <a href="https://ibispaint.com/?lang=ko"><img src="/pixivportfolio/img/ibispaint.svg" alt="ibispaint"></a>
+                </div>
+                <div class="helper">
+                    <a href="#">CONTACT</a>
+                    <a href="#">PRIVACY POLICY</a>
+                    <a href="#">TERMS OF SERVICE</a>
+                    <a href="#">COPYRIGHT</a>
+                </div>
+                <div class="Executives">
+                    <div class="imformation1">
+                        <div class="ceo-founder">
+                            <span>CEO : Gunieda Singo (國枝信吾)</span>
+                            <span>FOUNDER : Kamitani Takahiro (馬骨)</span>
+                        </div>                        
+                    </div>
+                    <div class="imformation2">
+                        <div class="ceo-founder">
+                            <span>TOKYO OFFICE : 4-23-5 Sendagaya Shibuya City,Tokyo, JPR Sendagaya Building 6F</span>
+                            <span>FUKUOKA OFFICE : 4-6-12 Nakasu, Hakata Ward, Fukuoka, Fukuoka Prefecture</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="inf">© PIXIV Inc.</div>
+            </div>
+            <div class="program">
+                <div class="paint">
+                    <div class="ab">
+                        <a href="#"><img src="/pixivportfolio/img/fanbox.svg" alt=""><span>FANBOX</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/ENCYCLOPEDIA.svg" alt=""><span>ENCYCLOPEDIA</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/PIXIVISION.svg" alt=""><span>PIXIVISION</span></a>
+                    </div>
+                    <div class="ed">
+                        <a href="#"><img src="/pixivportfolio/img/comic.svg" alt=""><span>COMIC</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/booth.svg" alt=""><span>BOOTH</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/sensei.svg" alt=""><span>SENSEI</span></a>
+                    </div>
+                    <div class="ef">
+                        <a href="#"><img src="/pixivportfolio/img/sensei.svg" alt=""><span>NOVEL</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/FACTORY.svg" alt=""><span>FACTORY</span></a>
+                        <a href="#"><img src="/pixivportfolio/img/vroid.svg" alt=""><span>VROID</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
