@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(pixivportfolio/img/by-mikapikazo.jpg) no-repeat center;
+    background: url(/pixivportfolio/img/by-mikapikazo.jpg) no-repeat center;
     background-size: cover;
 }
 body::before {
