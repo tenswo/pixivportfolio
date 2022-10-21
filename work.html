@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/pixivportfolio/work.css">
+    <link rel="stylesheet" type="text/css" href="pixivportfolio/work.css">
 </head>
 <body>
     <div class="function">
@@ -26,67 +26,186 @@
             </div>
             <div class="login-SIGHUP">
                 <div class="login">
-                    <a href="#">LOGIN</a>
+                    <a href="pixivportfolio/login.html">LOGIN</a>
                 </div>
                 <div class="signup">
-                    <a href="#">SIGNUP</a>
+                    <a href="pixivportfolio/login.html">SIGNUP</a>
                 </div>
             </div>
             <div class="short-cut">
                 <div class="link">
-                    <a href="#">FANBOX <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">VROID <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">SKETCH <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
+                    <a href="#">FANBOX <img src="pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
+                    <a href="#">VROID <img src="/img/arrow-entering-into-square.png" alt="arrow"></a>
+                    <a href="#">SKETCH <img src="/img/arrow-entering-into-square.png" alt="arrow"></a>
                     <div class="language">
-                        <a href="#">EN<img src="/pixivportfolio/img/earth.png" alt="english"></a>
+                        <a href="#">EN<img src="pixivportfolio/img/earth.png" alt="english"></a>
                     </div>
                 <div class="sns">
-                    <a href="https://www.youtube.com/user/pixivInfo"><img src="/pixivportfolio/img/youtube.svg" alt=""></a>
-                    <a href="https://twitter.com/pixiv"><img src="/pixivportfolio/img/twitter.svg" alt=""></a>
-                    <a href="https://www.instagram.com/pixiv/"><img src="/pixivportfolio/img/instagram.svg" alt=""></a>
+                    <a href="https://www.youtube.com/user/pixivInfo"><img src="pixivportfolio/img/youtube.svg" alt=""></a>
+                    <a href="https://twitter.com/pixiv"><img src="pixivportfolio/img/twitter.svg" alt=""></a>
+                    <a href="https://www.instagram.com/pixiv/"><img src="pixivportfolio/img/instagram.svg" alt=""></a>
                 </div>
                 </div>
             </div>
     </div>
     <nav class="sub">
-        <a href="/pixivportfolio/pixiv.html" class="logo"></a>
+        <a href="pixivportfolio/pixiv.html" class="logo"></a>
         <div class="menu">
-            <a href="/pixivportfolio/about.html">ABOUT</a>
-            <a href="/pixivportfolio/work.html">WORK</a>
-            <a href="#">SKETCH</a>
-            <a href="#">SENSEI</a>
+            <a href="pixivportfolio/about.html">ABOUT</a>
+            <a href="pixivportfolio/work.html">WORK</a>
+            <a href="pixivportfolio/login.html">SKETCH</a>
+            <a href="pixivportfolio/login.html">SENSEI</a>
         </div>
     </nav>
-    <section class="write">
-        <div class="tab">
-            <ul class="illustrations">
-                <li class="picture">
-                    <img src="/pixivportfolio/img/illustrat2.svg" alt="">
-                    <h2>illustrations</h2>
-                </li>
-            </ul>
-            <ul class="ugoira">
-                <li class="picture">
-                    <img src="/pixivportfolio/img/ugoira2.svg" alt="">
-                    <h2>ugoira(animation)</h2>
-                </li>
-            </ul>
-            <ul class="manga">
-                <li class="picture">
-                    <img src="/pixivportfolio/img/manga2.svg" alt="">
-                    <h2>manga</h2>
-                </li>
-            </ul>
-            <ul class="novels">
-                <li class="picture">
-                    <img src="/pixivportfolio/img/novels2.svg" alt="">
-                    <h2>novels</h2>
-                </li>
-            </ul>
+    <div class="write">
+        <div class="tab_content"> 
+            <input type="radio" name="tabmenu" id="tab01" checked>
+            <label for="tab01"><a href="#" class="illust">일러스트</a>illustration</label>
+            <input type="radio" name="tabmenu" id="tab02">
+            <label for="tab02"><a href="#" class="ugoira">우고이라</a>ugoira</label>
+            <input type="radio" name="tabmenu" id="tab03">
+            <label for="tab03"><a href="#" class="manga">만화</a>manga</label>
+            <input type="radio" name="tabmenu" id="tab04">
+            <label for="tab04"><a href="#" class="novels">소설</a>novels</label>
+            
+            <div class="conbox con1">
+                <div> JPEG - GIF - PNG<br>You can upload up to 32 MB per file and a maximum of 200 files<br>(the total file size must be less than 200 MB)
+                </div>
+                <div><a href="#" class="select"><img src="pixivportfolio/img/select.svg" alt=""></a>Select file</div>
+            </div>
+            <div class="conbox con2">
+                <div> JPEG - GIF - PNG<br>You can upload up to 32 MB per file and a maximum of 200 files<br>(the total file size must be less than 200 MB)
+                </div>
+                <div><a href="#" class="select"><img src="pixivportfolio/img/select.svg" alt=""></a>Select file</div>
+            </div>
+            <div class="conbox con3">
+                <div> JPEG - GIF - PNG<br>You can upload up to 32 MB per file and a maximum of 200 files<br>(the total file size must be less than 200 MB)
+                </div>
+                <div><a href="#" class="select"><img src="pixivportfolio/img/select.svg" alt=""></a>Select file</div>
+            </div>
+            <div class="conbox con4">
+                <div> JPEG - GIF - PNG<br>You can upload up to 32 MB per file and a maximum of 200 files<br>(the total file size must be less than 200 MB)
+                </div>
+                <div><a href="#" class="select"><img src="pixivportfolio/img/select.svg" alt=""></a>Select file</div>
+            </div>
         </div>
-    </section>
+        <div class="work">
+            <div class="title">
+                <div class="keywords1">
+                    <input class="title-txt" type="text" placeholder="Title">
+                </div>
+            </div>
+            <hr class="line">
+            <div class="caption">
+                <div class="keywords2">
+                    <textarea class="contents" placeholder="Caption"></textarea>                    
+                </div>
+            </div>
+            <div class="tag">
+                <input class="shop" type="text" placeholder="#Tag">                
+                <hr class="line">
+                <input class="redwords" type="text" placeholder="Recommand tag*">                
+                <hr class="line">
+                <div class="check">
+                    <input type="checkbox" id="check1">
+                    <label for="check1">Don't allow other users to edit tags</label>
+                </div>
+            </div>
+            <div class="Visible">
+                <div>Visible to</div>
+                <div class="ages">
+                    <label>
+                        <input type="radio" value="ages" name="radio1" checked>All gaes
+                    </label>
+                    <label>
+                        <input type="radio" value="ages" name="radio1">R-18
+                    </label>
+                    <label>
+                        <input type="radio" value="ages" name="radio1">R-18G
+                    </label>
+                </div>
+            </div>
+            <div class="Open">
+                <div>Open to</div>
+                <div class="range">
+                    <label>
+                        <input type="radio" value="range" name="radio2" checked>Make public
+                    </label>
+                    <label>
+                        <input type="radio" value="range" name="radio2">My pixiv only
+                    </label>
+                    <label>
+                        <input type="radio" value="range" name="radio2">Private
+                    </label>
+                </div>
+            </div>
+            <div class="Comments">
+                <div>Comments</div>
+                <div class="ON-OFF">
+                    <label>
+                        <input type="radio" value="ON-OFF" name="radio3" checked>ON
+                    </label>
+                    <label>
+                        <input type="radio" value="ON-OFF" name="radio3">OFF
+                    </label>
+                </div>
+            </div>
+            <div class="Original">
+                <input type="checkbox" id="check2">
+                <label for="check2">Original work</label>
+            </div>
+        </div>
+        <div class="p">
+            <hr class="line1">
+                <div class="twitter">
+                    <div class="share">
+                        <input type="checkbox" id="check3">
+                        <label for="check3">Share your work(s) on Twitter</label>
+                    </div>
+                    <div class="Scheduled-post">
+                        <div class="post">Scheduled post<img src="pixivportfolio/img/premium.svg" alt=""></div>
+                        <div class="submisson">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Schedule submisson</label>
+                        </div>
+                        <div class="upload">
+                            <div class="date">
+                                <p><input type="date" min="2022-01-01" max="2099-12-31" data-placeholder="YYYY-MM-DD" required></p>
+                            </div>
+                            <div class="time">
+                                <p><input type="time" min="00:00:00" max="23:59:59"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="read">
+                    <div class="menu01">
+                        <p class="guidelines">Please note that submitting the following contents is against our guidelines:</p>
+                        <p class="Contents">- Contents produced by others, reproductions of products that are on sale and any kind of work protected by a third-party copyright.</p>
+                    </div>
+                    <div class="menu02">
+                        <p class="These">These include screenshots of video games and illustrations.</p>
+                        <p class="Contents">- Contents that make use of materials belonging to the categories listed above and that you didn't make 100% yourself.</p>
+                        <p class="Contents">- Photography, except those which portray an artwork or illustration.</p>
+                    </div>
+                    <div class="menu03">
+                        <p class="These">Posting contents that violate the Terms of Use will result in a suspension from posting or possibly a termination of your account.</p>
+                        <p class="Terms">Terms of Use</p>                        
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="post-up">
+        <p class="Explanationv">Please only upload work that you've created or have permission to post. Work that violate our Terms of Use and Guidelines will be deleted.</p>
+        <div class="post-upload">
+            <a href="#">POST</a>
+        </div>
+    </div>
+    <div class="last">
+        <span>© PIXIV Inc.</span>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/pixivportfolio/work.js"></script>
+    <script src="pixivportfolio/work.js"></script>
 </body>
 </html>

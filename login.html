@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXIV-LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="pixivportfolio/login.css">
+</head>
+<body>
+    <section class="login-form">
+        <a href="pixivportfolio/pixiv.html"><h1>PIXIV</h1></a>
+        <form action="#">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">USER NAME</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">PASSWORD</label>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="">Forgot Password?</a>
+        </div>
+        <div class="user-info">
+            <div class="full">
+                <a href="https://www.pixiv.net/en/users/1039353" class="frofile"><img src="pixivportfolio/img/mikapikazo.svg" alt=""></a>
+                <div class="txt">
+                    <a href="https://www.pixiv.net/en/users/1039353" class="name">MIKA PIKAZO</a>
+                    <a href="https://www.pixiv.net/en/artworks/97311847" class="art">BAD RAT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="pixivportfolio/login.js"></script>
+</body>
+</html>
