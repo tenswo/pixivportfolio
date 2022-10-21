@@ -194,7 +194,7 @@ nav.sub a.logo {
   width: 217px;
   height: 84px;
   /* display: block; */
-  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
+  background: url(pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub div.menu {
   width: 557px;
@@ -220,7 +220,7 @@ div .next {
 .banner {
  position: relative;
  width: 100%;
- height: 987px;
+ height: 874px;
  padding: 0;
  margin: 0;
  display: flex;
@@ -230,7 +230,6 @@ div .next {
 .banner h1 {
   overflow: hidden;
   text-indent: -500px;
-
   width: 0px;
   height: 0px;
   padding: 0px;
@@ -288,10 +287,10 @@ div .next {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
+  background: url(pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
 }
 div.drawing {
   position: relative;
@@ -418,77 +417,77 @@ div img{
 .profile1 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile1.svg) no-repeat;
+  background: url(pixivportfolio/img/profile1.svg) no-repeat;
 }
 .profile2 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile2.svg) no-repeat;
+  background: url(pixivportfolio/img/profile2.svg) no-repeat;
 }
 .profile3 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile3.svg) no-repeat;
+  background: url(pixivportfolio/img/profile3.svg) no-repeat;
 }
 .profile4 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile4.svg) no-repeat;
+  background: url(pixivportfolio/img/profile4.svg) no-repeat;
 }
 .profile5 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile5.svg) no-repeat;
+  background: url(pixivportfolio/img/profile5.svg) no-repeat;
 }
 .profile6 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile6.svg) no-repeat;
+  background: url(pixivportfolio/img/profile6.svg) no-repeat;
 }
 .profile7 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile7.svg) no-repeat;
+  background: url(pixivportfolio/img/profile7.svg) no-repeat;
 }
 .profile8 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile8.svg) no-repeat;
+  background: url(pixivportfolio/img/profile8.svg) no-repeat;
 }
 .profile9 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile9.svg) no-repeat;
+  background: url(pixivportfolio/img/profile9.svg) no-repeat;
 }
 .profile10 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile10.svg) no-repeat;
+  background: url(pixivportfolio/img/profile10.svg) no-repeat;
 }
 .profile11 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile11.svg) no-repeat;
+  background: url(pixivportfolio/img/profile11.svg) no-repeat;
 }
 .profile12 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile12.svg) no-repeat;
+  background: url(pixivportfolio/img/profile12.svg) no-repeat;
 }
 .profile16 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile16.svg) no-repeat;
+  background: url(pixivportfolio/img/profile16.svg) no-repeat;
 }
 .profile19 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile19.svg) no-repeat;
+  background: url(pixivportfolio/img/profile19.svg) no-repeat;
 }
 .profile24 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile24.svg) no-repeat;
+  background: url(pixivportfolio/img/profile24.svg) no-repeat;
 }
 .artist {
   position: absolute;
@@ -531,10 +530,10 @@ div.reaction {
   outline: none;
   box-shadow: none;
   cursor: pointer;
-  background: url(/pixivportfolio/img/whitehearts.svg);
+  background: url(/img/whitehearts.svg);
 }
 .heart button:focus {
-  background: url(/pixivportfolio/img/redheart.svg);
+  background: url(/img/redheart.svg);
 }
 .views {
   width: 36px;
@@ -634,7 +633,7 @@ footer {
     rgba(255, 255, 255, 1) 99%,
     rgba(255, 255, 255, 1) 100%
   ),
-  url(/pixivportfolio/img/footer.svg) no-repeat;
+  url(/img/footer.svg) no-repeat;
 }
 .other {
   padding: 0px;
