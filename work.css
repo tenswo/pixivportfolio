@@ -9,12 +9,14 @@
   word-break: keep-all;
   /* outline: 1px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  min-width: 1200px;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
+/* 상단 고정 메뉴 */
 .function {
   position: fixed;
   width: 100%;
@@ -26,6 +28,11 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+.logoM,
+.TMenu {
+  display: none;
+}
+/* 다크모드 토글 */
 div .toggle input {
   visibility: hidden;
 }
@@ -58,15 +65,12 @@ div .toggle input {
   transition: .4s;
 }
 .switch input:checked + .slider {
-  background-color: #0096fa;
+  background-color: #fff;
 }
 .switch input:checked + .slider::before {
   transform: translateX(26px);
 }
-/* 다크모드 배경색 */
-.dark-mode {
-  background: #000;
-}
+/* 검색창 */
 .search-box{
   height: 35px;
   top: 0px;
@@ -103,6 +107,7 @@ div .toggle input {
   line-height: 15px;
   align-items: center;
 }
+/* 로그인 회원가입 */
 .function .login-SIGHUP {
   display: flex;
   flex-direction: row;
@@ -181,6 +186,7 @@ div .toggle input {
   gap: 5px;
   top: 4px;
 }
+/* 로고랑 메뉴 */
 nav.sub {
   width: 100%;
   height: 184px;
@@ -194,7 +200,6 @@ nav.sub {
 nav.sub a.logo {
   width: 217px;
   height: 84px;
-  /* display: block; */
   background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub div.menu {
@@ -215,6 +220,9 @@ nav.sub div.menu a {
   text-decoration: none;
   display: inline-block;
 }
+.mclose {
+  display: none;
+}
 .write {
   display: block;
   flex-direction:column;
@@ -222,6 +230,10 @@ nav.sub div.menu a {
 }
 .tab_content {
   text-align: center;
+  position: sticky;
+  top: 37px;
+  z-index: 1000;
+  background: #fff;
 }
 .tab_content input[type="radio"] {
   display: none;
@@ -417,7 +429,7 @@ textarea::placeholder {
 .tag input, label,
 .Original label,
 .post {
-  width: 1000px;
+  width: 100%;
   font-weight: 300;
   font-size: 30px;
   line-height: 41px;
@@ -572,7 +584,7 @@ input[id=check4]{
   padding: 0px;
   gap: 50px;
 }
-.twitter {
+.twit {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -738,4 +750,89 @@ input[type="time"]{
   line-height: 21px;
   align-items: center;
   text-align: center;
+}
+/* 다크모드 */
+.dark-mode {
+  background: #000;
+}
+.dark-mode .function {
+  background-color: #000;
+}
+.dark-mode .slider {
+  background: #fff;
+}
+.dark-mode .slider:before {
+  background: #000;
+}
+.dark-mode .menu a,
+.dark-mode .login-SIGHUP a,
+.dark-mode .link a,
+.dark-mode .tab_content,
+.dark-mode .keywords1 input,
+.dark-mode .keywords2 textarea,
+.dark-mode .tag .shop,
+.dark-mode .check,
+.dark-mode .Original,
+.dark-mode .Open div,
+.dark-mode .Comments div,
+.dark-mode .ages label,
+.dark-mode .range label,
+.dark-mode .ON-OFF label,
+.dark-mode .share,
+.dark-mode .Scheduled-post,
+.dark-mode .read,
+.dark-mode .Explanationv,
+.dark-mode .last span {
+  color: #fff;
+}
+.dark-mode .search-box,
+.dark-mode .search-txt,
+.dark-mode .language,
+.dark-mode .last {
+  background: #444444;
+}
+.dark-mode .search-btn {
+  color: #565656;
+ }
+.dark-mode .arrow {
+  content: url(/pixivportfolio/img/arrow2.svg);
+}
+.dark-mode .youtube {
+  content: url(/pixivportfolio/img/youtubeW.svg);
+}
+.dark-mode .twitter {
+  content: url(/pixivportfolio/img/twitterW.svg);
+}
+.dark-mode .instagram {
+  content: url(/pixivportfolio/img/instagramW.svg);
+}
+.dark-mode .earth {
+  content: url(/pixivportfolio/img/earthW.svg);
+}
+.dark-mode .language a {
+  color: #fff;
+}
+.dark-mode .login-SIGHUP a:hover {
+  color: #0096fa;
+}
+.dark-mode label a.illust {
+  background: url(/pixivportfolio/img/illustrat1.svg) no-repeat;
+}
+.dark-mode label a.ugoira {
+  background: url(/pixivportfolio/img/ugoira1.svg) no-repeat;
+}
+.dark-mode label a.manga {
+  background: url(/pixivportfolio/img/manga1.svg) no-repeat;
+}
+.dark-mode label a.novels {
+  background: url(/pixivportfolio/img/novels1.svg) no-repeat;
+}
+.dark-mode .tab_content {
+  background: #000;
+}
+.dark-mode input .redwords {
+  color: red;
+}
+.dark-mode .check input[type="checkbox"] {
+  background-color: #444444;
 }

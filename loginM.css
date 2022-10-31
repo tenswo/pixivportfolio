@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* 픽시브 로그인 모바일 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+body{
+    min-width: unset;
+    flex-direction: column;
+}
+/* 로그인 창 */
+.login-form {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.int-area {
+    width: 100%;
+    text-align: center;
+}
+.int-area input {
+    width: 80%;
+}
+.int-area label {
+    font-size: 13px;
+    left: 40px;
+}
+.btn-area {
+    text-align: center;
+}
+.btn-area button {
+    width: 80%;
+}
+.user-info {
+    position: static;
+}

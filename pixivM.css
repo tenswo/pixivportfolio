@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* 픽시브 모바일 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+body, .drawing{ min-width: unset}
+.function, .toggle, .login-SIGHUP a, .link a, .language {
+    display: none;
+}
+/* 상단 메뉴 */
+nav.sub {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background: #0096fa;
+}
+/* 로고 사이즈 */
+nav.sub a.logo {
+    width: 120px;
+    height: 40px;
+    background: url(/img/logogW.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+/* 사이드메뉴 스타일 */
+nav.sub div.menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    gap: 25px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #0096fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:.3s;
+    z-index: 210;
+}
+nav .menu a{
+    color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    padding: 0;
+    cursor: pointer;
+}
+.mclose{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.TMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #fff;
+    z-index: 200;
+}
+/* 베너 슬라이드 사이즈 */
+.banner {
+    height: 100%;
+}
+.slidebanner{
+    height: 100%;
+}
+.slidebanner .slick-prev,
+.slidebanner .slick-next{
+  width: 25px;
+  height: 25px;
+}
+/* 그림 사이즈 조절 */
+div.drawing {
+    top: 20px;
+}
+.users {
+    width: 100%;
+    height: 100%;
+}
+.example .illust .image {
+    width: 150px;
+    height: 150px;
+}
+.example .illust .image img {
+    width: 100%;
+    height: 100%;
+}
+.name {
+    width: 100%;
+}
+.artist {
+    letter-spacing: -0.065rem;
+}
+/* 프로필 조정 */
+.profile1,
+.profile2,
+.profile3,
+.profile4,
+.profile5,
+.profile6,
+.profile7,
+.profile8,
+.profile9,
+.profile10,
+.profile11,
+.profile12 {
+    width: 100%;
+    display: flex;
+}
+/* 하트 조회수 */
+div.reaction {
+    position: static;
+    gap: 0;
+    margin-left: auto;
+}
+.name .popup_image img {
+    width: 80%;
+}
+div .first h2,
+.popular h2 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+.popular .three {
+    height: 100%;
+}
+.popular .three button {
+    display: none;
+}
+.slide div {
+    font-size: 11px;
+    line-height: 15px;
+}
+.slick-next:before {
+    content: none;
+}
+/* 푸터 */
+footer {
+    height: 100%;
+}
+.other {
+    width: 100%;
+}
+/* 그림 프로그램 */
+.tools {
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    margin: 15px 15px;
+}
+/* 약관 주의사항 */
+.helper {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+}
+.helper a {
+    font-size: 2px;
+    line-height: 20px;
+}
+.paint {
+    width: 100%;
+    gap: 25px;
+    justify-content:center;
+}
+div .paint a {
+    width: 100%;
+}
+.paint img {
+    width: 100%;
+    height: 40px;
+}
+/* 개발자 이사 정보 */
+.Executives {
+    height: 100%;
+    gap: 50px;
+    padding: 0 10px;
+}
+.imformation1 {
+    display: block;
+}
+.imformation2 {
+    display: none;
+}
+.ceo-founder {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.ceo-founder span {
+    width: 100%;
+    font-size: 5px;
+    line-height: 10px;
+    text-align: center;
+}
+.inf {
+    font-size: 18px;
+}
+/* 탑 스크롤 */
+#topBtn {
+    height: 30px;
+    font-size : 20px;
+}
+#topBtn:hover {
+    border: 0;
+}

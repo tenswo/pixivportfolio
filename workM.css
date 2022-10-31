@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* 픽시브 워크 모바일 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+body{ min-width: unset}
+.function, .toggle, .login-SIGHUP a, .link a, .language {
+    display: none;
+}
+/* 상단 메뉴 */
+nav.sub {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background: #0096fa;
+}
+/* 로고 사이즈 */
+nav.sub a.logo {
+    width: 120px;
+    height: 40px;
+    background: url(/pixivportfolio/img/logogW.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+/* 사이드메뉴 스타일 */
+nav.sub div.menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    gap: 25px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #0096fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:.3s;
+    z-index: 210;
+}
+nav .menu a{
+    color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    padding: 0;
+    cursor: pointer;
+}
+.mclose{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.TMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #fff;
+    z-index: 1;
+}
+.tab_content label {
+    font-size: 20px;
+}
+.conbox {
+    height: 150px;
+}
+.conbox div {
+    width: 100%;
+    font-size: 10px;
+    top: 5px;
+}
+.conbox div:last-child {
+    width: 80%;
+    font-size: 25px;
+}
+.work {
+    height: auto;
+    margin-bottom: 0px;
+}
+.select img {
+    width: 40px;
+}
+.title {
+    padding: 0 10px;
+}
+/* 제목 설정 */
+.keywords1 .title-txt {
+    font-size: 20px;
+    text-indent: 0;
+}
+.caption {
+    padding: 0 10px;
+}
+/* 내용 설정 */
+.keywords2 textarea {
+    font-size: 20px;
+}
+textarea::placeholder {
+    font-size: 25px;
+}
+.tag input, label, .Original label, .post {
+    font-size: 16px;
+    letter-spacing: -0.065rem
+}
+/* 체크 박스 크기 */
+input[id=check1],
+input[id=check2],
+input[id=check3],
+input[id=check4] {
+    width: 25px;
+    height: 20px;
+}
+.tag {
+    padding: 20px 25px;
+}
+/* 필수 표시 */
+.Visible {
+    width: 100%;
+    gap: 10px;
+    padding: 0 3px;
+}
+.Visible div:first-child {
+    font-size: 15px;
+    line-height: 15px;
+}
+/* 나이 체크 */
+.ages {
+    gap: 0;
+}
+.ages input[type="radio"],
+.range input[type="radio"],
+.ON-OFF input[type="radio"] {
+    width: 10px;
+    height: 10px;
+}
+.Open {
+    width: 100%;
+    gap: 10px;
+    padding: 0 3px;
+}
+.Open div:first-child,
+.Comments div:first-child {
+    font-size: 15px;
+    line-height: 15px;
+}
+/* 범위 설정 */
+.range {
+    gap: 10px;
+}
+.range label {
+    line-height: 15px;
+}
+.Original {
+    padding: 20px 25px;
+}
+.p {
+    display: none;
+}
+.upload {
+    display: none;
+}
+.read {
+    display: none;
+}
+.post-up {
+    width: 100%;
+}
+/* 부여 설명 */
+.Explanationv {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 10px;
+    font-size: 10px;
+}
+/* 업로드 버튼 */
+.post-upload {
+    width: 50%;
+    height: 50px;
+    padding: 6px 45px;
+    border-radius: 50px;
+}
+.post-upload a {
+    text-align: center;
+}
+/* 기업 표시 */
+.last {
+    height: 50px;
+}
+.last span {
+    padding: 15px 0;
+}

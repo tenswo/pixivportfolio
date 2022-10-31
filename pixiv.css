@@ -9,11 +9,15 @@
   word-break: keep-all;
   /* outline: 1px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  min-width: 1200px;
+  min-width: 1080px;
   margin: 0;
   padding: 0;
 }
+/* 상단 고정 메뉴 */
 .function {
   position: fixed;
   width: 100%;
@@ -25,6 +29,11 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+.logoM,
+.TMenu {
+  display: none;
+}
+/* 다크모드 토글 */
 div .toggle input {
   visibility: hidden;
 }
@@ -57,17 +66,14 @@ div .toggle input {
   transition: .4s;
 }
 .switch input:checked + .slider {
-  background-color: #0096fa;
+  background-color: #fff;
 }
 .switch input:checked + .slider::before {
   transform: translateX(26px);
 }
-/* 다크모드 배경색 */
-.dark-mode {
-  background: #000;
-}
+/* 검색창 */
 .search-box{
-  height: 35px; 
+  height: 35px;
   top: 0px;
   background: #eeeeee;
   border-radius: 8px;
@@ -102,6 +108,7 @@ div .toggle input {
   line-height: 15px;
   align-items: center;
 }
+/* 로그인 회원가입 */
 .function .login-SIGHUP {
   display: flex;
   flex-direction: row;
@@ -180,6 +187,7 @@ div .toggle input {
   gap: 5px;
   top: 4px;
 }
+/* 로고 및 메뉴 */
 nav.sub {
   width: 100%;
   height: 184px;
@@ -193,8 +201,7 @@ nav.sub {
 nav.sub a.logo {
   width: 217px;
   height: 84px;
-  /* display: block; */
-  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
+  background: url(/img/LOGO.png) no-repeat;
 }
 nav.sub div.menu {
   width: 557px;
@@ -214,15 +221,16 @@ nav.sub div.menu a {
   text-decoration: none;
   display: inline-block;
 }
+.mclose {
+  display: none;
+}
 div .next {
+  /* 이미지 슬라이드 베너 */
   display: block;
 }
 .banner {
  position: relative;
  width: 100%;
- height: 874px;
- padding: 0;
- margin: 0;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -232,34 +240,28 @@ div .next {
   text-indent: -500px;
   width: 0px;
   height: 0px;
-  padding: 0px;
-  margin: 0px;
 }
 .banner button {
-  position: absolute;
   z-index: 10;
   top: 50%;
   transform: translateY(-50%);
 }
 .slidebanner{
-  position: absolute;
-  width: 1688px;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  display:inline-block;
+  width: 80%;
+  height: 100%;
 }
 .slidebanner .slide {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
+  overflow: hidden;
 }
 .slick-slide img {
   justify-content: center;
   align-items: center;
   display: inline-block;
+  width: 100%;
 }
 .slidebanner .slick-prev,
 .slidebanner .slick-next{
@@ -270,10 +272,10 @@ div .next {
   z-index: 50;
 }
 .slick-prev{
-  left: -80px;
+  left: 0;
 }
-.banner .slick-next{
-  left: 1715px;
+.slick-next{
+  right: 0;
 }
 .slidebanner .slick-prev::before,
 .slidebanner .slick-next::before{
@@ -287,11 +289,12 @@ div .next {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/pixivportfolio/img/forword.svg) no-repeat 50% 50% / contain;
+  background: url(/img/forward.svg) no-repeat 50% 50% / contain;
 }
+/* 분류별 추천 그림들 */
 div.drawing {
   position: relative;
   width: 100%;
@@ -301,21 +304,31 @@ div.drawing {
 }
 .inner {
   width: 1146px;
+  height: 100%;
   margin: 0 auto;
   margin-bottom: 42px;
 }
 div .inner section {
   width: 1146px;
-  height: 530px;
-  margin: 0 auto;
+  height: 100%;
   padding: 0;
+  margin-bottom: 30px;
   text-align: center;
   align-items: center;
 }
+.type {
+  width: 100%;
+  height: 100%;
+}
+/* 유저 추천 */
 .sec01 {
-  position: relative;
-  margin: 0px;
-  padding: 0px;
+  display: block;
+  height: 100%;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 div .first h2 {
   font-weight: 600;
@@ -328,42 +341,30 @@ div h2 {
   display: block;
   padding-bottom: 55px;
 }
-.users div {
+.users {
+  width: 100%;
+  height: 382px;
   display: block;
+}
+.users div {
+  display: flex;
   box-sizing: border-box;
 }
 .abc {
-  position: absolute;
+  display: flex;
 }
 ul .list {
   padding: 0px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 ul li {
-  position: absolute;
+  display: inline-block;
+  flex-direction: column;
   list-style: none;
-}
-ul li:nth-child(2) {
-  left: 193.5px;
-}
-ul li:nth-child(3) {
-  left: 387px;
-}
-ul li:nth-child(4) {
-  left: 580.5px;
-}
-ul li:nth-child(5) {
-  left: 774px;
-}
-ul li:nth-child(6) {
-  left: 967.5px;
 }
 div img{
   cursor: pointer;
-}
-.example {
-  width: 173.5px;
-  display: inline-block;
 }
 .example .illust .image {
   height: 175px;
@@ -387,6 +388,7 @@ div img{
   height: 14px;
   top: 2px;
 }
+/* 팝업 이미지 */
 .name .popup_image {
   position: fixed;
   top: 0; left: 0;
@@ -414,81 +416,83 @@ div img{
   width: 500px;
   object-fit: cover;
 }
+/* 유저 프로필 */
 .profile1 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile1.svg) no-repeat;
+  background: url(/img/profile1.svg) no-repeat;
 }
 .profile2 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile2.svg) no-repeat;
+  background: url(/img/profile2.svg) no-repeat;
 }
 .profile3 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile3.svg) no-repeat;
+  background: url(/img/profile3.svg) no-repeat;
 }
 .profile4 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile4.svg) no-repeat;
+  background: url(/img/profile4.svg) no-repeat;
 }
 .profile5 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile5.svg) no-repeat;
+  background: url(/img/profile5.svg) no-repeat;
 }
 .profile6 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile6.svg) no-repeat;
+  background: url(/img/profile6.svg) no-repeat;
 }
 .profile7 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile7.svg) no-repeat;
+  background: url(/img/profile7.svg) no-repeat;
 }
 .profile8 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile8.svg) no-repeat;
+  background: url(/img/profile8.svg) no-repeat;
 }
 .profile9 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile9.svg) no-repeat;
+  background: url(/img/profile9.svg) no-repeat;
 }
 .profile10 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile10.svg) no-repeat;
+  background: url(/img/profile10.svg) no-repeat;
 }
 .profile11 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile11.svg) no-repeat;
+  background: url(/img/profile11.svg) no-repeat;
 }
 .profile12 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile12.svg) no-repeat;
+  background: url(/img/profile12.svg) no-repeat;
 }
 .profile16 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile16.svg) no-repeat;
+  background: url(/img/profile16.svg) no-repeat;
 }
 .profile19 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile19.svg) no-repeat;
+  background: url(/img/profile19.svg) no-repeat;
 }
 .profile24 {
   width: 12px;
   height: 12px;
-  background: url(/pixivportfolio/img/profile24.svg) no-repeat;
+  background: url(/img/profile24.svg) no-repeat;
 }
+/* 그림 내 구성 */
 .artist {
   position: absolute;
   font-style: normal;
@@ -508,7 +512,6 @@ div.reaction {
 .heart {
   width: 36px;
   height: 14px;
-  padding: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -530,10 +533,10 @@ div.reaction {
   outline: none;
   box-shadow: none;
   cursor: pointer;
-  background: url(/pixivportfolio/img/whitehearts.svg);
+  background: url(/img/whitehearts.svg);
 }
 .heart button:focus {
-  background: url(/pixivportfolio/img/redheart.svg);
+  background: url(/img/redheart.svg);
 }
 .views {
   width: 36px;
@@ -550,21 +553,22 @@ div.reaction {
   letter-spacing: -0.065em;
 }
 .list1 {
-  position: absolute;
-  top: 210px;
+  display: inline-block;
 }
+/* 추천 작품 */
 .sec02 {
-  position: relative;
-}
-.sec03 {
-  position: relative;
   display: block;
+}
+/* 베스트 유저 */
+.sec03 {
+  display: block;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 .page {
   width: 1146px;
-  height: 514px;
+  height: 100%;
 }
 div.crown {
   width: 255px;
@@ -579,8 +583,11 @@ div.crown img {
   width: 48px;
   height: 48px;
 }
+.popular {
+  height: 100%;
+}
 .popular .three {
-  top: 20px;
+  height: 544px;
   display: block;
   font-style: normal;
   font-weight: 600;
@@ -598,13 +605,11 @@ div.crown img {
   letter-spacing: -0.065em;
 }
 .popular .three button {
-  visibility: hidden;
+  display: none;
 }
+/* 픽시브 유튜브 */
 .sec04 {
-  position: relative;
-  top: 20px;
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 .sec04 h2 {
   overflow: hidden;
@@ -618,6 +623,7 @@ iframe {
   width: 1146px;
   height: 530px;
 }
+/* 푸터 */
 footer {
   position: relative;
   width: 100%;
@@ -633,7 +639,7 @@ footer {
     rgba(255, 255, 255, 1) 99%,
     rgba(255, 255, 255, 1) 100%
   ),
-  url(/pixivportfolio/img/footer.svg) no-repeat;
+  url(/img/footer.svg) no-repeat;
 }
 .other {
   padding: 0px;
@@ -756,4 +762,103 @@ div .paint span {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.065em;
+}
+/* 탑 버튼 */
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  background: #0096fa;
+  border:8px inset #0096fa;
+  color: white;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}
+#topBtn:hover {
+  border:8px outset #0096fa;
+}
+/* 다크모드 */
+.dark-mode {
+  background: #000;
+}
+.dark-mode .function {
+  background-color: #000;
+}
+.dark-mode .slider {
+  background: #fff;
+}
+.dark-mode .slider:before {
+  background: #000;
+}
+.dark-mode .menu a,
+.dark-mode .login-SIGHUP a,
+.dark-mode .link a,
+.dark-mode .drawing,
+.dark-mode .other,
+.dark-mode .helper a,
+.dark-mode .paint span{
+  color: #fff;
+}
+.dark-mode .search-box,
+.dark-mode .search-txt,
+.dark-mode .language {
+  background: #444444;
+}
+.dark-mode .search-btn {
+  color: #565656;
+ }
+.dark-mode .arrow {
+  content: url(/img/arrow2.svg);
+}
+.dark-mode .youtube {
+  content: url(/img/youtubeW.svg);
+}
+.dark-mode .twitter {
+  content: url(/img/twitterW.svg);
+}
+.dark-mode .instagram {
+  content: url(/img/instagramW.svg);
+}
+.dark-mode .earth {
+  content: url(/img/earthW.svg);
+}
+.dark-mode .language a {
+  color: #fff;
+}
+.dark-mode .login-SIGHUP a:hover {
+  color: #0096fa;
+}
+.dark-mode .heart button {
+  background: url(/img/heartW.svg);
+}
+.dark-mode .heart button:focus {
+  background: url(/img/redheart.svg);
+}
+.dark-mode .eye {
+  content: url(/img/viewsW.svg);
+}
+.dark-mode .Clipstudio {
+  content: url(/img/ClipstudioW.svg);
+}
+.dark-mode .Medibang {
+  content: url(/img/medibangpaintW.svg);
+}
+.dark-mode .ibispaint {
+  content: url(/img/IbisPaintW.svg);
+}
+.dark-mode footer {
+  background:linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.7) 90%,
+    rgba(0, 0, 0, 1) 98%,
+    rgba(0, 0, 0, 1) 99%,
+    rgba(0, 0, 0, 1) 100%
+  ),
+  url(/img/footer2.svg) no-repeat;
 }

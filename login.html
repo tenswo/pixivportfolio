@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIXIV-LOGIN</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="/pixivportfolio/login.css">
+    <link rel="stylesheet" media="all and (max-width: 1080px)" href="/pixivportfolio/loginT.css">
+    <link rel="stylesheet" media="all and (max-width: 820px)" href="/pixivportfolio/loginM.css">
 </head>
 <body>
+    <!-- 로그인 창 -->
     <section class="login-form">
         <a href="/pixivportfolio/pixiv.html"><h1>PIXIV</h1></a>
         <form action="#">
@@ -27,6 +29,8 @@
         <div class="caption">
             <a href="">Forgot Password?</a>
         </div>
+    </section>
+        <!-- 작가 프로필 -->
         <div class="user-info">
             <div class="full">
                 <a href="https://www.pixiv.net/en/users/1039353" class="frofile"><img src="/pixivportfolio/img/mikapikazo.svg" alt=""></a>
@@ -36,7 +40,6 @@
                 </div>
             </div>
         </div>
-    </section>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="/pixivportfolio/login.js"></script>
 </body>

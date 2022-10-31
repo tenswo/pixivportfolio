@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* 픽시브 로그인 태블릿 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+body{ 
+    min-width: unset;
+}

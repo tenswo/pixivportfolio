@@ -5,58 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIXIV-WORK</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="/pixivportfolio/work.css">
+    <link rel="stylesheet" media="all and (max-width: 1080px)" href="/pixivportfolio/workT.css">
+    <link rel="stylesheet" media="all and (max-width: 820px)" href="/pixivportfolio/workM.css">
 </head>
 <body>
+    <!-- 상단 고정 메뉴 -->
     <div class="function">
-            <div class="toggle">
-                <label class="switch">
-                <input type="checkbox" onclick="changeMode()">
-                <span class="slider"></span>
-                </label>
-            </div>
-            <div class="search-box">
-                <input class="search-txt" type="text" placeholder="Search works">
-                <a class="search-btn" href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
-            <div class="login-SIGHUP">
-                <div class="login">
-                    <a href="/pixivportfolio/login.html">LOGIN</a>
-                </div>
-                <div class="signup">
-                    <a href="/pixivportfolio/login.html">SIGNUP</a>
-                </div>
-            </div>
-            <div class="short-cut">
-                <div class="link">
-                    <a href="#">FANBOX <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">VROID <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">SKETCH <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <div class="language">
-                        <a href="#">EN<img src="/pixivportfolio/img/earth.png" alt="english"></a>
-                    </div>
-                <div class="sns">
-                    <a href="https://www.youtube.com/user/pixivInfo"><img src="/pixivportfolio/img/youtube.svg" alt=""></a>
-                    <a href="https://twitter.com/pixiv"><img src="/pixivportfolio/img/twitter.svg" alt=""></a>
-                    <a href="https://www.instagram.com/pixiv/"><img src="/pixivportfolio/img/instagram.svg" alt=""></a>
-                </div>
-                </div>
-            </div>
-    </div>
-    <nav class="sub">
-        <a href="/pixivportfolio/pixiv.html" class="logo"></a>
-        <div class="menu">
-            <a href="/pixivportfolio/about.html">ABOUT</a>
-            <a href="/pixivportfolio/work.html">WORK</a>
-            <a href="/pixivportfolio/login.html">SKETCH</a>
-            <a href="/pixivportfolio/login.html">SENSEI</a>
+        <div class="toggle">
+            <label class="switch">
+            <input type="checkbox" onclick="changeMode()">
+            <span class="slider"></span>
+            </label>
         </div>
-    </nav>
+        <!-- 검색창 -->
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search works">
+            <a class="search-btn" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+        <!-- 로그인 회원가입 -->
+        <div class="login-SIGHUP">
+            <div class="login">
+                <a href="/pixivportfolio/login.html">LOGIN</a>
+            </div>
+            <div class="signup">
+                <a href="/pixivportfolio/login.html">SIGNUP</a>
+            </div>
+        </div>
+        <!-- sns링크 이동 -->
+        <div class="short-cut">
+            <div class="link">
+                <a href="#">FANBOX <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
+                <a href="#">VROID <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
+                <a href="#">SKETCH <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
+                <div class="language">
+                    <a href="#">EN<img class="earth" src="/pixivportfolio/img/earth.svg" alt="english"></a>
+                </div>
+            <div class="sns">
+                <a href="https://www.youtube.com/user/pixivInfo"><img class="youtube" src="/pixivportfolio/img/youtube.svg" alt=""></a>
+                <a href="https://twitter.com/pixiv"><img class="twitter" src="/pixivportfolio/img/twitter.svg" alt=""></a>
+                <a href="https://www.instagram.com/pixiv/"><img class="instagram" src="/pixivportfolio/img/instagram.svg" alt=""></a>
+            </div>
+            </div>
+        </div>
+</div>
+<!-- 로고 및 메뉴 -->
+<nav class="sub">
+    <a href="/pixivportfolio/pixiv.html" class="logo"></a>
+    <div id="mySidenav" class="menu">
+        <a href="/pixivportfolio/about.html">ABOUT</a>
+        <a href="/pixivportfolio/work.html">WORK</a>
+        <a href="/pixivportfolio/login.html">SKETCH</a>
+        <a href="/pixivportfolio/login.html">SENSEI</a>
+        <i onclick="closeNav()" class="fas fa-times mclose"></i>
+    </div>
+    <i onclick="openNav()" class="fa-solid fa-bars TMenu"></i>
+</nav>
     <div class="write">
         <div class="tab_content"> 
             <input type="radio" name="tabmenu" id="tab01" checked>
@@ -157,7 +165,7 @@
         </div>
         <div class="p">
             <hr class="line1">
-                <div class="twitter">
+                <div class="twit">
                     <div class="share">
                         <input type="checkbox" id="check3">
                         <label for="check3">Share your work(s) on Twitter</label>

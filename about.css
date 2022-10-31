@@ -9,12 +9,15 @@
   word-break: keep-all;
   /* outline: 1px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  min-width: 1200px;
+  min-width: 1080px;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
+/* 상단 고정 메뉴 */
 .function {
   position: fixed;
   width: 100%;
@@ -26,6 +29,11 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+.logoM,
+.TMenu {
+  display: none;
+}
+/* 다크모드 토글 */
 div .toggle input {
   visibility: hidden;
 }
@@ -58,15 +66,12 @@ div .toggle input {
   transition: .4s;
 }
 .switch input:checked + .slider {
-  background-color: #0096fa;
+  background-color: #fff;
 }
 .switch input:checked + .slider::before {
   transform: translateX(26px);
 }
-/* 다크모드 배경색 */
-.dark-mode {
-  background: #000;
-}
+/* 검색창 */
 .search-box{
   height: 35px;
   top: 0px;
@@ -103,6 +108,7 @@ div .toggle input {
   line-height: 15px;
   align-items: center;
 }
+/* 로그인 회원가입 */
 .function .login-SIGHUP {
   display: flex;
   flex-direction: row;
@@ -181,6 +187,7 @@ div .toggle input {
   gap: 5px;
   top: 4px;
 }
+/* 로고랑 메뉴 */
 nav.sub {
   width: 100%;
   height: 184px;
@@ -194,7 +201,6 @@ nav.sub {
 nav.sub a.logo {
   width: 217px;
   height: 84px;
-  /* display: block; */
   background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub div.menu {
@@ -215,6 +221,13 @@ nav.sub div.menu a {
   text-decoration: none;
   display: inline-block;
 }
+.mclose {
+  display: none;
+}
+div .next {
+  display: block;
+}
+/* 픽시브에 대해 */
 .about-us {
   width: 1146px;
   height: 741px;
@@ -277,9 +290,10 @@ nav.sub div.menu a {
   text-align: center;
   letter-spacing: 0.1em;
 }
+/* 픽시브 사내 사진 및 설명 */
 .sec01 {
   width: 100%;
-  height: 3583px;
+  height: 100%;
 }
 #triangle {
   width: 0;
@@ -291,20 +305,21 @@ nav.sub div.menu a {
 }
 .inner {
   width: 100%;
-  height: 3450px;
+  height: 100%;
   background-color: #0096fa;
 }
 .top {
-  position: relative;
   width: 921px;
   margin: 0 auto;
-  top: 63px;
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 63px 0;
 }
 .top img {
   margin-bottom: 30px;
+}
+.imformation1 {
+  width: 100%;
 }
 .imformation1 p {
   height: 113px;
@@ -333,11 +348,9 @@ nav.sub div.menu a {
   letter-spacing: 0.055em;
 }
 .first {
-  position: relative;
   width: 909px;
   margin: 0 auto;
-  left: 481px;
-  top: 100px;
+  padding: 0 481px;
   display: flex;
   gap: 30px;
 }
@@ -357,9 +370,9 @@ nav.sub div.menu a {
   line-height: 260%;
 }
 .second {
-  position: relative;
   width: 909px;
-  left: 68px;
+  transform: translateY(-50px);
+  padding: 0 82px;
   display: flex;
   gap: 30px;
 }
@@ -373,11 +386,10 @@ nav.sub div.menu a {
   line-height: 190.7%;
 }
 .third {
-  position: relative;
   width: 909px;
   margin: 0 auto;
-  left: 481px;
-  top: -100px;
+  transform: translateY(-100px);
+  padding: 0 481px;
   display: flex;
   gap: 30px;
 }
@@ -386,11 +398,8 @@ nav.sub div.menu a {
   height: 144px;
 }
 .fourth {
-  position: relative;
   width: 1814px;
   margin: 0 auto;
-  gap: 70px;
-  padding: 0;
 }
 .imformation5 {
   display: flex;
@@ -409,10 +418,8 @@ nav.sub div.menu a {
   text-align: center;
 }
 .bottom {
-  position: relative;
   width: 835px;
   height: 173px;
-  top: 65px;
   margin: 0 auto;
   gap: 15px;
   padding: 0;
@@ -447,15 +454,13 @@ nav.sub div.menu a {
   line-height: 20px;
   text-align: center;
 }
+/* 주소 및 구글 맵 */
 .sec02 {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 0;
 }
 div .address {
-  width: 1146px;
+  width: 100%;
 }
 .profile {
   gap: 8px;
@@ -534,6 +539,8 @@ div .address {
 }
 .tokyo,
 .fukuoka {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -543,11 +550,12 @@ div .address {
   gap: 10px;
 }
 footer {
-  position: relative;
-  top: 48px;
+  height: 100%;
 }
+/* 사내 및 괴롭힘 */
 .helper {
   height: 220px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -560,11 +568,7 @@ footer {
   background-color: #EBF7FB;
 }
 .order p {
-  position: absolute;
-  width: 1126px;
-  height: 65px;
-  left: 400px;
-  top: 36px;
+  padding: 36px 400px;
   font-size: 20px;
   line-height: 27px;
   display: flex;
@@ -589,7 +593,6 @@ footer {
 .button2 {
   width: 558px;
   height: 49px;
-  background: #FFFFFF;
   border: 1px solid #009CFF;
   border-radius: 25px;
   display: flex;
@@ -610,12 +613,11 @@ footer {
   transform: translateY(3px);
   color: #0096fa;
 }
+/* 푸터 */
 .last {
   width: 100%;
   height: 71px;
-  top: 48px;
   padding: 25px 910px;
-  position: relative;
   display: flex;
   background: #EDEDED;
 }
@@ -626,4 +628,79 @@ footer {
   line-height: 21px;
   align-items: center;
   text-align: center;
+}
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  background: #0096fa;
+  border:8px inset #0096fa;
+  color: white;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}
+#topBtn:hover {
+  border:8px outset #0096fa;
+}
+/* 다크모드 */
+.dark-mode {
+  background: #000;
+}
+.dark-mode .function {
+  background-color: #000;
+}
+.dark-mode .slider {
+  background: #fff;
+}
+.dark-mode .slider:before {
+  background: #000;
+}
+.dark-mode .menu a,
+.dark-mode .login-SIGHUP a,
+.dark-mode .link a,
+.dark-mode .up h2,
+.dark-mode .down,
+.dark-mode .address,
+.dark-mode .last span {
+  color: #fff;
+}
+.dark-mode .search-box,
+.dark-mode .search-txt,
+.dark-mode .language,
+.dark-mode .last {
+  background: #444444;
+}
+.dark-mode .search-btn {
+  color: #565656;
+ }
+.dark-mode .arrow {
+  content: url(/pixivportfolio/img/arrow2.svg);
+}
+.dark-mode .youtube {
+  content: url(/pixivportfolio/img/youtubeW.svg);
+}
+.dark-mode .twitter {
+  content: url(/pixivportfolio/img/twitterW.svg);
+}
+.dark-mode .instagram {
+  content: url(/pixivportfolio/img/instagramW.svg);
+}
+.dark-mode .earth {
+  content: url(/pixivportfolio/img/earthW.svg);
+}
+.dark-mode .language a {
+  color: #fff;
+}
+.dark-mode .login-SIGHUP a:hover {
+  color: #0096fa;
+}
+.dark-mode .order {
+  background-color: #00222e;
+}
+.dark-mode .order p {
+color: #fff;
 }

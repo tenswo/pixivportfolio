@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* 픽시브 태블릿 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+
+body{ min-width: unset}
+.function, .toggle, .login-SIGHUP a, .link a, .language {
+    display: none;
+}
+nav.sub {
+    width: 100%;
+    padding: 50px 0;
+}
+nav.sub a.logo {
+    top: 0;
+    width: 160px;
+    height: 60px;
+    background: url(/pixivportfolio/img/LOGO.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+/* 사이드메뉴 스타일 */
+nav.sub div.menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    gap: 25px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #0096fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:.3s;
+    z-index: 210;
+}
+nav .menu a{
+    color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    padding: 0;
+    cursor: pointer;
+}
+.mclose{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+.TMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #0096fa;
+    z-index: 200;
+}
+/* 교차 메뉴 */
+.tab_content {
+    width: 100%;
+    position: static;
+    z-index: 0;
+}
+input[type="radio"] + label {
+    width: 100%;
+    display: block;
+}
+.conbox {
+    width: 100%;
+}
+/* 작성 내용 */
+.work {
+    width: 100%;
+    padding: 0 10px;
+}
+.p {
+    width: 100%;
+    padding: 0 10px;
+    gap: 30px;
+}
+.title {
+    width: 100%;
+}
+/* 체크박스 크기 */
+input[id=check1],
+input[id=check2],
+input[id=check3],
+input[id=check4] {
+    height: 25px;
+}
+/* 제목 */
+.keywords1 {
+    width: 100%;
+}
+/* 내용 */
+.keywords2 textarea {
+    width: 100%;
+}
+/* 체크 내용 */
+.tag {
+    width: 100%;
+}
+.tag .check {
+    width: 100%;
+}
+.tag input:last-child {
+    width: 30px;
+}
+/* 경계선 */
+.line1 {
+    width: 100%;
+}
+.twit {
+    width: 100%;
+}
+.share {
+    width: 100%;
+}
+.Open div:first-child, .Comments div:first-child {
+    font-size: 25px;
+}
+.Scheduled-post {
+    width: 100%;
+    gap: 25px;
+    padding: 4px 10px;
+}
+.tag input, label,
+.Original label,
+.post {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: -0.065em;
+  background: none;
+}
+.These {
+    font-size: 20px;
+}
+.read {
+    width: 100%;
+    height: 100%;
+}
+.post-up {
+    height: 100%;
+}
+/* 기업 마크 */
+.last {
+    padding: 0;
+    justify-content: center;
+}
+.last span {
+    height: 50%;
+    padding: 25px 0;
+}

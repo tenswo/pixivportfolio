@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIXIV</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="/pixivportfolio/pixiv.css">
+    <link rel="stylesheet" media="all and (max-width: 1080px)" href="/pixivportfolio/pixivT.css">
+    <link rel="stylesheet" media="all and (max-width: 820px)" href="/pixivportfolio/pixivM.css">
 </head>
 <body>
+    <!-- 상단 고정 메뉴 -->
     <div class="function">
             <div class="toggle">
                 <label class="switch">
@@ -18,68 +20,77 @@
                 <span class="slider"></span>
                 </label>
             </div>
+            <!-- 검색창 -->
             <div class="search-box">
                 <input class="search-txt" type="text" placeholder="Search works">
                 <a class="search-btn" href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </div>
+            <!-- 로그인 회원가입 -->
             <div class="login-SIGHUP">
                 <div class="login">
                     <a href="/pixivportfolio/login.html">LOGIN</a>
                 </div>
                 <div class="signup">
-                    <a href="/pixivportfolio/login.html/login.html">SIGNUP</a>
+                    <a href="/pixivportfolio/login.html">SIGNUP</a>
                 </div>
             </div>
+            <!-- sns링크 이동 -->
             <div class="short-cut">
                 <div class="link">
-                    <a href="#">FANBOX <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">VROID <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">SKETCH <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
+                    <a href="#">FANBOX <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
+                    <a href="#">VROID <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
+                    <a href="#">SKETCH <img class="arrow" src="/pixivportfolio/img/arrow1.svg" alt="arrow"></a>
                     <div class="language">
-                        <a href="#">EN<img src="/pixivportfolio/img/earth.png" alt="english"></a>
+                        <a href="#">EN<img class="earth" src="/pixivportfolio/img/earth.svg" alt="english"></a>
                     </div>
                 <div class="sns">
-                    <a href="https://www.youtube.com/user/pixivInfo"><img src="/pixivportfolio/img/youtube.svg" alt=""></a>
-                    <a href="https://twitter.com/pixiv"><img src="/pixivportfolio/img/twitter.svg" alt=""></a>
-                    <a href="https://www.instagram.com/pixiv/"><img src="/pixivportfolio/img/instagram.svg" alt=""></a>
+                    <a href="https://www.youtube.com/user/pixivInfo"><img class="youtube" src="/pixivportfolio/img/youtube.svg" alt=""></a>
+                    <a href="https://twitter.com/pixiv"><img class="twitter" src="/pixivportfolio/img/twitter.svg" alt=""></a>
+                    <a href="https://www.instagram.com/pixiv/"><img class="instagram" src="/pixivportfolio/img/instagram.svg" alt=""></a>
                 </div>
                 </div>
             </div>
     </div>
+    <!-- 로고 및 메뉴 -->
     <nav class="sub">
         <a href="/pixivportfolio/pixiv.html" class="logo"></a>
-        <div class="menu">
+        <div id="mySidenav" class="menu">
             <a href="/pixivportfolio/about.html">ABOUT</a>
             <a href="/pixivportfolio/work.html">WORK</a>
             <a href="/pixivportfolio/login.html">SKETCH</a>
             <a href="/pixivportfolio/login.html">SENSEI</a>
+            <i onclick="closeNav()" class="fas fa-times mclose"></i>
         </div>
+        <i onclick="openNav()" class="fa-solid fa-bars TMenu"></i>
     </nav>
+    <!-- 베너 슬라이드 -->
     <div class="next">
         <section class="banner">
             <h1>#</h1>
-            <div class="slidebanner">
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner1.svg" alt=""></div>
+                <div class="slidebanner">
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner1.svg" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner2.svg" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner3.svg" alt=""></div>
+                    </div>
+                    <div class="slide">
+                        <div><img src="/pixivportfolio/img/banner4.svg" alt=""></div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner2.svg" alt=""></div>
-                </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner3.svg" alt=""></div>
-                </div>
-                <div class="slide">
-                    <div><img src="/pixivportfolio/img/banner4.svg" alt=""></div>
-                </div>
-            </div>
         </section>
     </div>
+    <!-- 유저 그림들 -->
     <div class="drawing">
         <div class="inner">
             <section class="sec01">
                 <div class="type">
+                    <!-- 첫번째 그림 요소들 -->
                     <div class="first">
                         <h2>Users Recommended</h2>
                         <div class="users">                        
@@ -88,7 +99,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/purplegirl.svg" alt=""></div>
+                                               <div class="image"><img class="M1" src="/pixivportfolio/img/purplegirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -100,7 +111,7 @@
                                                 <div class="artist">purple girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -108,7 +119,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/GonFreecss.svg" alt=""></div>
+                                               <div class="image"><img class="M2" src="/pixivportfolio/img/GonFreecss.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -120,7 +131,7 @@
                                                 <div class="artist">Gon Freecss</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -128,7 +139,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Violet.svg" alt=""></div>
+                                               <div class="image"><img class="M3" src="/pixivportfolio/img/Violet.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -140,7 +151,7 @@
                                                 <div class="artist">Violet sad</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,7 +159,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/blondegirl.svg" alt=""></div>
+                                               <div class="image"><img class="M4" src="/pixivportfolio/img/blondegirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -160,7 +171,7 @@
                                                 <div class="artist">blonde girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,7 +179,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Pudencygirl.svg" alt=""></div>
+                                               <div class="image"><img class="M5" src="/pixivportfolio/img/Pudencygirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -180,7 +191,7 @@
                                                 <div class="artist">Pudency girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +199,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Suitman.svg" alt=""></div>
+                                               <div class="image"><img class="M6" src="/pixivportfolio/img/Suitman.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -200,7 +211,7 @@
                                                 <div class="artist">Suit man</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -210,7 +221,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Foggy.svg" alt=""></div>
+                                               <div class="image"><img class="M7" src="/pixivportfolio/img/Foggy.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -222,7 +233,7 @@
                                                 <div class="artist">Foggy</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -230,7 +241,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Cyberpunk.svg" alt=""></div>
+                                               <div class="image"><img class="M8" src="/pixivportfolio/img/Cyberpunk.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -242,7 +253,7 @@
                                                 <div class="artist">Cyber punk</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -250,7 +261,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Sunglassesgirl.svg" alt=""></div>
+                                               <div class="image"><img class="M9" src="/pixivportfolio/img/Sunglassesgirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -262,7 +273,7 @@
                                                 <div class="artist">Sunglasses girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,7 +281,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Deku.svg" alt=""></div>
+                                               <div class="image"><img class="M10" src="/pixivportfolio/img/Deku.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -282,7 +293,7 @@
                                                 <div class="artist">Deku</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -290,7 +301,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Violingirl.svg" alt=""></div>
+                                               <div class="image"><img class="M11" src="/pixivportfolio/img/Violingirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -302,7 +313,7 @@
                                                 <div class="artist">Violin girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -310,7 +321,7 @@
                                     <li>
                                         <div class="example">
                                             <div class="illust">
-                                               <div class="image"><img src="/pixivportfolio/img/Moongirl.svg" alt=""></div>
+                                               <div class="image"><img class="M12" src="/pixivportfolio/img/Moongirl.svg" alt=""></div>
                                             </div>
                                         </div>                                  
                                         <div class="name">
@@ -322,7 +333,7 @@
                                                 <div class="artist">Moon girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -335,6 +346,7 @@
             </section>
             <section class="sec02">
                 <div class="type">
+                    <!-- 두번째 그림 요소들 -->
                     <div class="first">
                         <h2>Recommended Works</h2>
                         <div class="users">
@@ -355,7 +367,7 @@
                                                 <div class="artist">Toga himiko</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -375,7 +387,7 @@
                                                 <div class="artist">lovely couple</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -395,7 +407,7 @@
                                                 <div class="artist">sad girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -415,7 +427,7 @@
                                                 <div class="artist">Dragon and girl</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -435,7 +447,7 @@
                                                 <div class="artist">dj woman</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -455,7 +467,7 @@
                                                 <div class="artist">Pretty couple</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -477,7 +489,7 @@
                                                 <div class="artist">bubble tea</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -497,7 +509,7 @@
                                                 <div class="artist">Uchiha madara</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>                                                                     
@@ -517,7 +529,7 @@
                                                 <div class="artist">pubg</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -537,7 +549,7 @@
                                                 <div class="artist">Vampire</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -557,7 +569,7 @@
                                                 <div class="artist">Sunset</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -577,7 +589,7 @@
                                                 <div class="artist">Lack of energy</div>
                                                 <div class="reaction">
                                                     <div class="heart"><button type="button"></button>10.0 K</div>
-                                                    <div class="views"><img src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
+                                                    <div class="views"><img class="eye" src="/pixivportfolio/img/eyes.svg" alt="eye">10.0 K</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -589,11 +601,12 @@
                 </div>                                      
             </section>
             <section class="sec03">
+                <!-- 베스트 유저 그림들 -->
                 <div class="page">
                     <div class="popular">
                         <h2>Best user</h2>
                         <div class="crown">
-                            <img src="/pixivportfolio/img/Crown.svg" alt="">10372173
+                            <img src="/pixivportfolio/img/Crown.svg" alt=""><p>10372173</p>
                         </div>
                         <div class="three">
                             <div class="slide">
@@ -624,9 +637,10 @@
                     </div>
                 </div>
             </section>
+            <!-- 픽시브 유튜브 -->
             <section class="sec04">
                 <h2>.</h2>
-                <div class="youtube">
+                <div class="youtubeP">
                     <div data-aos="fade-up" class="youtube-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/tsGhOcisNls" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -634,13 +648,15 @@
             </section>
         </div>
     </div>
+    <!-- 푸터 -->
     <footer>
         <div class="other">
             <div class="tools">
+                <!-- 그림 프로그램 링크 -->
                 <div class="paint">
-                    <a href="https://www.clipstudio.net/kr/"><img src="/pixivportfolio/img/Clipstudio.svg" alt="Clipstudio"></a>
-                    <a href="https://medibangpaint.com/ko/"><img src="/pixivportfolio/img/Medibang.svg" alt="Medibang"></a>
-                    <a href="https://ibispaint.com/?lang=ko"><img src="/pixivportfolio/img/ibispaint.svg" alt="ibispaint"></a>
+                    <a href="https://www.clipstudio.net/kr/"><img class="Clipstudio" src="/pixivportfolio/img/Clipstudio.svg" alt="Clipstudio"></a>
+                    <a href="https://medibangpaint.com/ko/"><img class="Medibang" src="/pixivportfolio/img/Medibang.svg" alt="Medibang"></a>
+                    <a href="https://ibispaint.com/?lang=ko"><img class="ibispaint" src="/pixivportfolio/img/ibispaint.svg" alt="ibispaint"></a>
                 </div>
                 <div class="helper">
                     <a href="#">CONTACT</a>
@@ -651,8 +667,8 @@
                 <div class="Executives">
                     <div class="imformation1">
                         <div class="ceo-founder">
-                            <span>CEO : Gunieda Singo (國枝信吾)</span>
-                            <span>FOUNDER : Kamitani Takahiro (馬骨)</span>
+                            <span class="ceo">CEO : Gunieda Singo (國枝信吾)</span>
+                            <span class="founder">FOUNDER : Kamitani Takahiro (馬骨)</span>
                         </div>                        
                     </div>
                     <div class="imformation2">
@@ -664,6 +680,7 @@
                 </div>
                 <div class="inf">© PIXIV Inc.</div>
             </div>
+            <!-- 픽시브 서브 기능 -->
             <div class="program">
                 <div class="paint">
                     <div class="ab">
@@ -685,9 +702,10 @@
             </div>
         </div>
     </footer>
+    <!-- 탑버튼 -->
+    <button id="topBtn"> <i class="fa-solid fa-caret-up"></i> </button>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/pixivportfolio/pixiv.js"></script>
 </body>
 </html>

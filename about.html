@@ -5,75 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIXIV-ABOUT</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/pixivportfolio/about.css">
+    <link rel="stylesheet" type="text/css" href="/about.css">
+    <link rel="stylesheet" media="all and (max-width: 1080px)" href="/aboutT.css">
+    <link rel="stylesheet" media="all and (max-width: 820px)" href="/aboutM.css">
 </head>
 <body>
     <div class="function">
-            <div class="toggle">
-                <label class="switch">
-                <input type="checkbox" onclick="changeMode()">
-                <span class="slider"></span>
-                </label>
-            </div>
-            <div class="search-box">
-                <input class="search-txt" type="text" placeholder="Search works">
-                <a class="search-btn" href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
-            <div class="login-SIGHUP">
-                <div class="login">
-                    <a href="/pixivportfolio/login.html">LOGIN</a>
-                </div>
-                <div class="signup">
-                    <a href="/pixivportfolio/login.html">SIGNUP</a>
-                </div>
-            </div>
-            <div class="short-cut">
-                <div class="link">
-                    <a href="#">FANBOX <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">VROID <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <a href="#">SKETCH <img src="/pixivportfolio/img/arrow-entering-into-square.png" alt="arrow"></a>
-                    <div class="language">
-                        <a href="#">EN<img src="/pixivportfolio/img/earth.png" alt="english"></a>
-                    </div>
-                <div class="sns">
-                    <a href="https://www.youtube.com/user/pixivInfo"><img src="/pixivportfolio/img/youtube.svg" alt=""></a>
-                    <a href="https://twitter.com/pixiv"><img src="/pixivportfolio/img/twitter.svg" alt=""></a>
-                    <a href="https://www.instagram.com/pixiv/"><img src="/pixivportfolio/img/instagram.svg" alt=""></a>
-                </div>
-                </div>
-            </div>
-    </div>
-    <nav class="sub">
-        <a href="/pixivportfolio/pixiv.html" class="logo"></a>
-        <div class="menu">
-            <a href="/pixivportfolio/about.html">ABOUT</a>
-            <a href="/pixivportfolio/work.html">WORK</a>
-            <a href="/pixivportfolio/login.html">SKETCH</a>
-            <a href="/pixivportfolio/login.html">SENSEI</a>
+        <div class="toggle">
+            <label class="switch">
+            <input type="checkbox" onclick="changeMode()">
+            <span class="slider"></span>
+            </label>
         </div>
-    </nav>
+        <!-- 검색창 -->
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search works">
+            <a class="search-btn" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+        <!-- 로그인 회원가입 -->
+        <div class="login-SIGHUP">
+            <div class="login">
+                <a href="/login.html">LOGIN</a>
+            </div>
+            <div class="signup">
+                <a href="/login.html">SIGNUP</a>
+            </div>
+        </div>
+        <!-- sns링크 이동 -->
+        <div class="short-cut">
+            <div class="link">
+                <a href="#">FANBOX <img class="arrow" src="/img/arrow1.svg" alt="arrow"></a>
+                <a href="#">VROID <img class="arrow" src="/img/arrow1.svg" alt="arrow"></a>
+                <a href="#">SKETCH <img class="arrow" src="/img/arrow1.svg" alt="arrow"></a>
+                <div class="language">
+                    <a href="#">EN<img class="earth" src="/img/earth.svg" alt="english"></a>
+                </div>
+            <div class="sns">
+                <a href="https://www.youtube.com/user/pixivInfo"><img class="youtube" src="/img/youtube.svg" alt=""></a>
+                <a href="https://twitter.com/pixiv"><img class="twitter" src="/img/twitter.svg" alt=""></a>
+                <a href="https://www.instagram.com/pixiv/"><img class="instagram" src="/img/instagram.svg" alt=""></a>
+            </div>
+            </div>
+        </div>
+</div>
+<!-- 로고 및 메뉴 -->
+<nav class="sub">
+    <a href="/pixiv.html" class="logo"></a>
+    <div id="mySidenav" class="menu">
+        <a href="/about.html">ABOUT</a>
+        <a href="/work.html">WORK</a>
+        <a href="/login.html">SKETCH</a>
+        <a href="/login.html">SENSEI</a>
+        <i onclick="closeNav()" class="fas fa-times mclose"></i>
+    </div>
+    <i onclick="openNav()" class="fa-solid fa-bars TMenu"></i>
+</nav>
+    <!-- 첫 단락 -->
     <section class="about-us">
         <div class="up">
             <h2>About us</h2>
-            <img src="/pixivportfolio/img/aboutline.svg" alt="">                      
+            <img src="/img/aboutline.svg" alt="">                      
         </div>
         <div class="down">
             <div>Create a place where creative activities are more fun</div>
-            <img src="/pixivportfolio/img/sign.svg" alt="">
+            <img src="/img/sign.svg" alt="">
             <span>We want creators to enjoy their creative activities and communication with fans. We want to support the creative activities of creators around the world and stimulate creative culture . are doing</span>
         </div>
     </section>
+    <!-- 두번째 단락 -->
     <section class="sec01">
         <div id="triangle"></div>
         <div class="inner">
             <div class="top">
                 <div class="imformation1">
-                    <img src="/pixivportfolio/img/top.svg" alt="">
+                    <img src="/img/top.svg" alt="">
                     <p>Pixiv is an SNS where creators can communicate through the works they post, 
                         and it is possible to publish and exchange works such as illustrations, manga, and novels.
                         Creators can enjoy various forms of communication through their creative activities, such as receiving
@@ -81,8 +90,8 @@
                     </p>
                 </div>
             </div>
-            <div data-aos="fade-left" class="first">
-                <img src="/pixivportfolio/img/first.svg" alt="">
+            <div class="first">
+                <img src="/img/first.svg" alt="">
                 <div class="imformation2">
                     <h2>I have a mentor
                         I feel safe</h2>
@@ -91,7 +100,7 @@
                     </p>
                 </div>
             </div>
-            <div data-aos="fade-right" class="second">                
+            <div class="second">                
                 <div class="imformation3">
                     <h2>At a conference
                         ,study session
@@ -99,10 +108,10 @@
                     <p>We encourage employees to actively participate in conferences and study sessions held outside the company for engineers. In addition, every Friday we hold a study session within the company, where I share my knowledge and research with other staff members.
                     </p>
                 </div>
-                <img src="/pixivportfolio/img/second.svg" alt="">
+                <img src="/img/second.svg" alt="">
             </div>
-            <div data-aos="fade-left" class="third">
-                <img src="/pixivportfolio/img/third.svg" alt="">
+            <div class="third">
+                <img src="/img/third.svg" alt="">
                 <div class="imformation4">
                     <h2>Senpai and Kouhai
                         Community Manager
@@ -111,16 +120,14 @@
                     </p>
                 </div>
             </div>
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000" class="fourth">                
+            <div class="fourth">                
                 <div class="imformation5">
                     <h2>Create a mechanism to know the fun of drawing! Until the “Doodle Great War” was created</h2>
                     <p>The original character submission project "Doodle Great War" is a project in which the teams are divided into three teams: "low saturation colors"
                         "pale colors", and "bright colors", and face off based on the total number of "bookmarks" given to illustrations. .
                     </p>
                 </div>
-                <img src="/pixivportfolio/img/fourth.svg" alt="">
+                <img src="/img/fourth.svg" alt="">
             </div>
             <div class="bottom">
                 <div class="imformation6">
@@ -133,11 +140,12 @@
             </div>
         </div>
     </section>
+    <!-- 기업 정보 -->
     <section class="sec02">
         <div class="address">
             <div class="profile">
                 <h2>Company Profile</h2>
-                <img src="/pixivportfolio/img/aboutline.svg" alt=""> 
+                <img src="/img/aboutline.svg" alt=""> 
             </div>
             <div class="imformation7">
                 <div class="title">
@@ -155,6 +163,7 @@
                     <p>6F, Prato Nakasu, 4-6-12 Nakasu, Hakata Ward, Fukuoka City, Fukuoka Prefecture 810-0801</p>
                 </div>
             </div>
+            <!-- 구글 지도 -->
             <div class="map">
                 <div class="tokyo">
                     <span>Tokyo Office</span>
@@ -169,6 +178,7 @@
             </div>
         </div>
     </section>
+    <!-- 푸터 -->
     <footer>
         <div class="helper">
             <div class="order">
@@ -178,7 +188,7 @@
             <div class="button">
                 <a href="">
                     <div class="button1">
-                        <div>Harassment eradication declaration</div>
+                        <div>Harassment eradication Declaration</div>
                         <i class="fa-solid fa-caret-right"></i>
                     </div>
                 </a>
@@ -193,10 +203,11 @@
         <div class="last">
         <span>© PIXIV Inc.</span>
         </div>
+        <!-- 탑버튼 -->
+        <button id="topBtn"> <i class="fa-solid fa-caret-up"></i> </button>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/pixivportfolio/about.js"></script>
+    <script src="/about.js"></script>
 </body>
 </html>

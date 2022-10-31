@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* 픽시브 어바웃 모바일 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid red; */
+}
+body, .drawing{ min-width: unset}
+.function, .toggle, .login-SIGHUP a, .link a, .language {
+    display: none;
+}
+/* 상단 메뉴 */
+nav.sub {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background: #0096fa;
+}
+/* 로고 사이즈 */
+nav.sub a.logo {
+    width: 120px;
+    height: 40px;
+    background: url(/pixivportfolio/img/logogW.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+/* 사이드메뉴 스타일 */
+nav.sub div.menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    gap: 25px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #0096fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:.3s;
+    z-index: 210;
+}
+nav .menu a{
+    color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    padding: 0;
+    cursor: pointer;
+}
+/* 메뉴 닫기 */
+.mclose{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+/* 메뉴 열기 */
+.TMenu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #fff;
+    z-index: 1;
+}
+/* 첫 단락 */
+.about-us {
+    margin-bottom: 10px;
+    gap: 0;
+}
+.about-us .up {
+    height: 100%;
+    gap: 0;
+}
+.about-us .down {
+    gap: 15px;
+}
+.down span {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 10px;
+    font-size: 5px;
+}
+.up h2 {
+    height: 28px;
+    font-size: 15px;
+}
+.down div {
+    font-size: 15px;
+    letter-spacing: -0.085rem;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-bottom: 30px solid #0096fa;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+}
+/* 사진 및 소개 글 */
+.first,
+.second,
+.third {
+    gap: 5px;
+}
+.imformation1 p {
+    font-size: 3px;
+    line-height: 12px;
+    padding: 0 9px;
+}
+.imformation2,
+.imformation3,
+.imformation4 {
+    gap: 8px;
+}
+.top {
+    padding: 20px 0 20px 0;
+}
+.imformation2 h2,
+.imformation3 h2,
+.imformation4 h2 {
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 10px;
+}
+.imformation2 p,
+.imformation3 p,
+.imformation4 p {
+    font-size: 5px;
+    line-height: 10px;
+}
+.imformation2 h2,
+.imformation4 h2,
+.imformation2 p,
+.imformation4 p {
+    text-align: right;
+}
+.bottom {
+    margin: 10px 0;
+}
+.bottom h2 {
+    height: 40px;
+    font-size: 20px;
+}
+.imformation6 {
+    gap: 0;
+}
+.imformation6 span {
+    font-size: 12px;
+}
+.imformation6 p {
+    font-size: 8px;
+    padding: 0 12px;
+}
+.sec02 { 
+    padding: 0;
+    margin-bottom: 15px;
+}
+/* 회사 정보 */
+.profile {
+    gap: 0;
+    margin-bottom: 10px;
+}
+.imformation7 {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin: 0;
+}
+.profile h2 {
+    height: 28px;
+    font-size: 12px;
+    letter-spacing: -0.065rem;
+}
+.title {
+    top: 0;
+    gap: 0;
+}
+.title p {
+    font-size: 15px;
+    width: 100px;
+    height: 100%;
+}
+.answer {
+    width: 100%;
+    gap: 19px;
+}
+.answer p {
+    width: 100%;
+    height: 34px;
+    line-height: normal;
+    font-size: 10px
+}
+/* 구글 지도 */
+.map {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+.map span {
+    font-size: 20px;
+}
+iframe {
+    height: 100%;
+}
+.order {
+    margin-bottom: 20px;
+}
+.order p {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 5px 10px;
+}
+.button1 div, .button2 div {
+    font-size: 10px;
+    line-height: normal;
+}
+/* 기업 표시 */
+.last {
+    height: 50px;
+}
+.last span {
+    padding: 15px 0;
+}
+.inf {
+    font-size: 18px;
+}
+/* 탑 스크롤 */
+#topBtn {
+    height: 30px;
+    font-size : 20px;
+}
+#topBtn:hover {
+    border: 0;
+}
