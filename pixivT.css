@@ -20,7 +20,7 @@ nav.sub a.logo {
     top: 0;
     width: 160px;
     height: 60px;
-    background: url(/img/LOGO.png) no-repeat 50% 50%;
+    background: url(/pixivportfolio/img/LOGO.png) no-repeat 50% 50%;
     background-size: contain;
   }
 /* 사이드메뉴 스타일 */
@@ -139,13 +139,13 @@ div .first h2 {
 }
 /* 그림 프로그램 */
 .Clipstudio {
-    content: url(/img/ClipstudioW.svg);
+    content: url(/pixivportfolio/img/ClipstudioW.svg);
 }
 .Medibang {
-    content: url(/img/medibangpaintW.svg);
+    content: url(/pixivportfolio/img/medibangpaintW.svg);
 }
 .ibispaint {
-    content: url(/img/IbisPaintW.svg);
+    content: url(/pixivportfolio/img/IbisPaintW.svg);
 }
 .helper a {
     color: #fff;

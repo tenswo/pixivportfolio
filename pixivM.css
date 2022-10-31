@@ -22,7 +22,7 @@ nav.sub {
 nav.sub a.logo {
     width: 120px;
     height: 40px;
-    background: url(/img/logogW.svg) no-repeat 50% 50%;
+    background: url(/pixivportfolio/img/logogW.svg) no-repeat 50% 50%;
     background-size: contain;
 }
 /* 사이드메뉴 스타일 */
