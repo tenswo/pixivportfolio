@@ -201,7 +201,7 @@ nav.sub {
 nav.sub a.logo {
   width: 217px;
   height: 84px;
-  background: url(/img/LOGO.png) no-repeat;
+  background: url(/pixivportfolio/img/LOGO.png) no-repeat;
 }
 nav.sub div.menu {
   width: 557px;
@@ -289,10 +289,10 @@ div .next {
   display: none;
 }
 .slidebanner .slick-prev::before{
-  background: url(/img/back.svg) no-repeat 50% 50% / contain;
+  background: url(/pixivportfolio/img/back.svg) no-repeat 50% 50% / contain;
 }
 .slidebanner .slick-next::before{
-  background: url(/img/forward.svg) no-repeat 50% 50% / contain;
+  background: url(/pixivportfolio/img/forward.svg) no-repeat 50% 50% / contain;
 }
 /* 분류별 추천 그림들 */
 div.drawing {
@@ -420,77 +420,77 @@ div img{
 .profile1 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile1.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile1.svg) no-repeat;
 }
 .profile2 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile2.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile2.svg) no-repeat;
 }
 .profile3 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile3.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile3.svg) no-repeat;
 }
 .profile4 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile4.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile4.svg) no-repeat;
 }
 .profile5 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile5.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile5.svg) no-repeat;
 }
 .profile6 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile6.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile6.svg) no-repeat;
 }
 .profile7 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile7.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile7.svg) no-repeat;
 }
 .profile8 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile8.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile8.svg) no-repeat;
 }
 .profile9 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile9.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile9.svg) no-repeat;
 }
 .profile10 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile10.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile10.svg) no-repeat;
 }
 .profile11 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile11.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile11.svg) no-repeat;
 }
 .profile12 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile12.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile12.svg) no-repeat;
 }
 .profile16 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile16.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile16.svg) no-repeat;
 }
 .profile19 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile19.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile19.svg) no-repeat;
 }
 .profile24 {
   width: 12px;
   height: 12px;
-  background: url(/img/profile24.svg) no-repeat;
+  background: url(/pixivportfolio/img/profile24.svg) no-repeat;
 }
 /* 그림 내 구성 */
 .artist {
@@ -533,10 +533,10 @@ div.reaction {
   outline: none;
   box-shadow: none;
   cursor: pointer;
-  background: url(/img/whitehearts.svg);
+  background: url(/pixivportfolio/img/whitehearts.svg);
 }
 .heart button:focus {
-  background: url(/img/redheart.svg);
+  background: url(/pixivportfolio/img/redheart.svg);
 }
 .views {
   width: 36px;
@@ -639,7 +639,7 @@ footer {
     rgba(255, 255, 255, 1) 99%,
     rgba(255, 255, 255, 1) 100%
   ),
-  url(/img/footer.svg) no-repeat;
+  url(/pixivportfolio/img/footer.svg) no-repeat;
 }
 .other {
   padding: 0px;
@@ -812,19 +812,19 @@ div .paint span {
   color: #565656;
  }
 .dark-mode .arrow {
-  content: url(/img/arrow2.svg);
+  content: url(/pixivportfolio/img/arrow2.svg);
 }
 .dark-mode .youtube {
-  content: url(/img/youtubeW.svg);
+  content: url(/pixivportfolio/img/youtubeW.svg);
 }
 .dark-mode .twitter {
-  content: url(/img/twitterW.svg);
+  content: url(/pixivportfolio/img/twitterW.svg);
 }
 .dark-mode .instagram {
-  content: url(/img/instagramW.svg);
+  content: url(/pixivportfolio/img/instagramW.svg);
 }
 .dark-mode .earth {
-  content: url(/img/earthW.svg);
+  content: url(/pixivportfolio/img/earthW.svg);
 }
 .dark-mode .language a {
   color: #fff;
@@ -833,22 +833,22 @@ div .paint span {
   color: #0096fa;
 }
 .dark-mode .heart button {
-  background: url(/img/heartW.svg);
+  background: url(/pixivportfolio/img/heartW.svg);
 }
 .dark-mode .heart button:focus {
-  background: url(/img/redheart.svg);
+  background: url(/pixivportfolio/img/redheart.svg);
 }
 .dark-mode .eye {
-  content: url(/img/viewsW.svg);
+  content: url(/pixivportfolio/img/viewsW.svg);
 }
 .dark-mode .Clipstudio {
-  content: url(/img/ClipstudioW.svg);
+  content: url(/pixivportfolio/img/ClipstudioW.svg);
 }
 .dark-mode .Medibang {
-  content: url(/img/medibangpaintW.svg);
+  content: url(/pixivportfolio/img/medibangpaintW.svg);
 }
 .dark-mode .ibispaint {
-  content: url(/img/IbisPaintW.svg);
+  content: url(/pixivportfolio/img/IbisPaintW.svg);
 }
 .dark-mode footer {
   background:linear-gradient(
@@ -860,5 +860,5 @@ div .paint span {
     rgba(0, 0, 0, 1) 99%,
     rgba(0, 0, 0, 1) 100%
   ),
-  url(/img/footer2.svg) no-repeat;
+  url(/pixivportfolio/img/footer2.svg) no-repeat;
 }
