@@ -763,6 +763,36 @@ div .paint span {
   line-height: 20px;
   letter-spacing: -0.065em;
 }
+/* filter 버튼 */
+.filter{
+  position: fixed;
+  width: 100px;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0096fa;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.filter span{
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: -1px;
+}
+.filter span:hover,
+.filter span.on{
+  color: #0096fa;
+  background: rgba(255,255,255);
+}
 /* 탑 버튼 */
 #topBtn {
   position: fixed;
@@ -861,4 +891,16 @@ div .paint span {
     rgba(0, 0, 0, 1) 100%
   ),
   url(/pixivportfolio/img/footer2.svg) no-repeat;
+}
+.dark-mode .filter{
+  background: #0096fa;
+  border-bottom: 1px solid black;
+}
+.dark-mode .filter span{
+  color: #000;
+}
+.dark-mode .filter span:hover,
+.dark-mode .filter span.on{
+  color: #0096fa;
+  background: rgba(0,0,0);
 }

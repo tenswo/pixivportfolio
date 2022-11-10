@@ -9,7 +9,7 @@
 }
 
 body, .drawing{ min-width: unset}
-.function, .toggle, .login-SIGHUP a, .link a, .language {
+.function, .toggle, .login-SIGHUP a, .link a, .language, .filter {
     display: none;
 }
 nav.sub {
@@ -48,6 +48,7 @@ nav .menu a{
     padding: 0;
     cursor: pointer;
 }
+/* 메뉴 닫기 */
 .mclose{
     display: block;
     position: absolute;
@@ -56,13 +57,14 @@ nav .menu a{
     color: #fff;
     font-size: 2rem;
 }
+/* 메뉴 열기 */
 .TMenu{
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
     color: #0096fa;
-    z-index: 200;
+    z-index: 1;
 }
 /* 베너 */
 .banner {
@@ -160,6 +162,9 @@ div .first h2 {
 footer {
     position: static;
     background: none;
+}
+.filter {
+    display: none;
 }
 /* 탑메뉴 스타일 */
 #topBtn {

@@ -84,3 +84,38 @@ $(document).ready(function() {
         $('html ,body').animate({scrollTop : 0},10);
     });
 });
+// 리모컨 필터
+// $(window).scroll(function() {
+//     if($(this).scrollTop() > 100) {
+//         $('.filter').fadeIn("on");
+//     } else {
+//         $('.filter').fadeOut("on");
+//     }
+// });
+// 필터
+$(function() {
+    let data;
+
+    $(".filter span").click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        $("#"+$(this).data('id')).addClass('on').siblings().removeClass('on');
+    });
+    // THREE 클릭 시 초기화
+    $("#THREE").on("click", function() {
+        $('#TWO, #ONE').off('detach');
+    });
+    // TWO 클릭 시 두번째 요소 삭제
+    $("#TWO").on("click", function() {
+        data = $(".sec02").detach();
+    });
+    $("#THREE").on("click", function() {
+        $(".sec01").append(data);
+    });
+    // ONE 클릭 시 두번째 요소 삭제
+    $("#ONE").on("click", function() {
+        data = $(".sec02, .sec03").detach();
+    });
+    $("#TWO").on("click", function() {
+        $(".sec02").append(data);
+    });
+});

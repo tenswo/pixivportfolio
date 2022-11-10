@@ -13,6 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  min-width: 1080px;
   margin: 0;
   padding: 0;
 }
@@ -807,7 +808,7 @@ input[type="time"]{
   content: url(/pixivportfolio/img/instagramW.svg);
 }
 .dark-mode .earth {
-  content: url(/pixivportfolio/img/earthW.svg);
+  content: url(/img/earthW.svg);
 }
 .dark-mode .language a {
   color: #fff;

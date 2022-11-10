@@ -7,7 +7,7 @@
     <title>PIXIV</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/pixivportfolio/pixiv.css">
+    <link rel="stylesheet" type="text/css" href="/pixiv.css">
     <link rel="stylesheet" media="all and (max-width: 1080px)" href="/pixivportfolio/pixivT.css">
     <link rel="stylesheet" media="all and (max-width: 820px)" href="/pixivportfolio/pixivM.css">
 </head>
@@ -58,7 +58,7 @@
         <a href="/pixivportfolio/pixiv.html" class="logo"></a>
         <div id="mySidenav" class="menu">
             <a href="/pixivportfolio/about.html">ABOUT</a>
-            <a href="/pixivportfolio/work.html">WORK</a>
+            <a href="/work.html">WORK</a>
             <a href="/pixivportfolio/login.html">SKETCH</a>
             <a href="/pixivportfolio/login.html">SENSEI</a>
             <i onclick="closeNav()" class="fas fa-times mclose"></i>
@@ -88,9 +88,9 @@
     <!-- 유저 그림들 -->
     <div class="drawing">
         <div class="inner">
+            <!-- 첫번째 그림 요소들 -->
             <section class="sec01">
                 <div class="type">
-                    <!-- 첫번째 그림 요소들 -->
                     <div class="first">
                         <h2>Users Recommended</h2>
                         <div class="users">                        
@@ -344,9 +344,9 @@
                     </div>  
                     </div>                
             </section>
+            <!-- 두번째 그림 요소들 -->
             <section class="sec02">
                 <div class="type">
-                    <!-- 두번째 그림 요소들 -->
                     <div class="first">
                         <h2>Recommended Works</h2>
                         <div class="users">
@@ -600,8 +600,8 @@
                     </div>
                 </div>                                      
             </section>
+            <!-- 베스트 유저 그림들 -->
             <section class="sec03">
-                <!-- 베스트 유저 그림들 -->
                 <div class="page">
                     <div class="popular">
                         <h2>Best user</h2>
@@ -702,6 +702,12 @@
             </div>
         </div>
     </footer>
+    <!-- 필터 리모컨 -->
+    <div class="filter">
+        <span id="THREE" class="on">THREE</span>
+        <span id="TWO">TWO</span>
+        <span id="ONE">ONE</span>
+    </div>
     <!-- 탑버튼 -->
     <button id="topBtn"> <i class="fa-solid fa-caret-up"></i> </button>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

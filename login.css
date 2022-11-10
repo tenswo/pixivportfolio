@@ -11,6 +11,7 @@
 }
 /* 로그인창 배경화면 */
 body {
+    min-width: 1080px;
     font-family: 'Noto Sans', sans-serif;  
     display: flex;
     justify-content: center;
@@ -97,6 +98,7 @@ a{
     font-size: 20px;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
 }
 .caption {
     margin-top: 20px;

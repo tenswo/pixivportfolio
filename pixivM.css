@@ -8,7 +8,7 @@
     /* outline: 1px solid red; */
 }
 body, .drawing{ min-width: unset}
-.function, .toggle, .login-SIGHUP a, .link a, .language {
+.function, .toggle, .login-SIGHUP a, .link a, .language, .filter {
     display: none;
 }
 /* 상단 메뉴 */
@@ -50,19 +50,21 @@ nav .menu a{
     padding: 0;
     cursor: pointer;
 }
+/* 메뉴 닫기 */
 .mclose{
     display: block;
     position: absolute;
     top: 15px;
     right: 15px;
 }
+/* 메뉴 열기 */
 .TMenu{
     display: block;
     position: absolute;
     top: 20px;
     right: 15px;
     color: #fff;
-    z-index: 200;
+    z-index: 1;
 }
 /* 베너 슬라이드 사이즈 */
 .banner {
